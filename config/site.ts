@@ -1,12 +1,12 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Silk Road",
-  description: "全球贸易从业者的 智能化协同中枢，以数字化手段重塑传统贸易资源的连接效率与商业价值",
+  name: "Silk Road-丝绸之路",
+  description: "全球贸易从业者的智能化协同中枢，以数字化手段重塑传统贸易资源的连接效率与商业价值",
   mainNav: [],
   links: {
-    twitter: "https://twitter.com/SilkRoadsTrade",
-    github: "https://github.com/whsheng/silkroads"
+    twitter: "https://twitter.com/Wang66610825311",
+    github: "https://github.com/whsheng/silkroad"
   }
 }
 

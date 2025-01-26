@@ -27,13 +27,17 @@ export function LinkContent() {
             </div>
           )
         })}
+
+
+        {/* 暂时隐藏联系方式
+        
         <div className="mb-12">
           <div className="my-4">
-            <h1 className="mb-2 text-2xl font-bold text-primary/80 sm:text-3xl">联系我</h1>
+            <h1 className="mb-2 text-2xl font-bold text-primary/80 sm:text-3xl">Contact me </h1>
           </div>
           <div>
             你可以通过
-            <Link href="mailto:2020583117@qq.com" target="_blank" rel="noreferrer">
+            <Link href="mailto:borlandceo@gamil.com" target="_blank" rel="noreferrer">
               <span className="px-3 underline decoration-wavy hover:text-purple-500">Email</span>
             </Link>
             或者
@@ -49,7 +53,10 @@ export function LinkContent() {
           <div>
             <Image src="/weixin.jpg" className="float-left md:w-1/4" alt="kk想当程序员" width={318} height={318} />
           </div>
-        </div>
+        </div> 
+        */}
+
+
       </div>
     </div>
   )
