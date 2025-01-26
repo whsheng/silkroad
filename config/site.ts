@@ -31,175 +31,175 @@ export const NavData:NavData[] = [
     "title": "热门平台",
     "items": [
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/133799209385058185.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.ikjzd.com",
         "title": "赛鸟海外仓",
         "desc": "赛鸟海外仓",
         "link": "https://www.ikjzd.com/server/1810619064989577232"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/133799218812637486.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.ikjzd.com",
         "title": "紫鸟浏览器",
         "desc": "紫鸟浏览器",
         "link": "https://www.ikjzd.com/server/1575413266742935553"
       },
       {
-        "icon": "https://www.ikjzd.com/server/1810619064989587232",
+        "icon": "https://www.google.com/s2/favicons?domain=www.ikjzd.com",
         "title": "小牛站外推广",
         "desc": "小牛站外推广",
         "link": "https://www.ikjzd.com/server/1810619064989587232"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/133764787349408490.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.bifangkuajing.com",
         "title": "毕方学院",
         "desc": "毕方学院",
         "link": "https://www.bifangkuajing.com/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/1.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.com",
         "title": "美国站",
         "desc": "美国站",
         "link": "https://www.amazon.com/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/2.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.co.uk",
         "title": "英国站",
         "desc": "英国站",
         "link": "https://www.amazon.co.uk/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/3.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.de",
         "title": "德国站",
         "desc": "德国站",
         "link": "https://www.amazon.de/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/4.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.fr",
         "title": "法国站",
         "desc": "法国站",
         "link": "https://www.amazon.fr/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/5.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.it",
         "title": "意大利站",
         "desc": "意大利站",
         "link": "https://www.amazon.it/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/6.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.es",
         "title": "西班牙站",
         "desc": "西班牙站",
         "link": "https://www.amazon.es/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/7.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.com.au",
         "title": "澳洲站",
         "desc": "澳洲站",
         "link": "https://www.amazon.com.au/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/8.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.ca",
         "title": "加拿大站",
         "desc": "加拿大站",
         "link": "https://www.amazon.ca/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/9.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=sellercentral.amazon.com",
         "title": "美国后台",
         "desc": "美国后台",
         "link": "https://sellercentral.amazon.com/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/10.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=sellercentral.amazon.co.uk",
         "title": "英国后台",
         "desc": "英国后台",
         "link": "https://sellercentral.amazon.co.uk"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/11.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=sellercentral-japan.amazon.com",
         "title": "日本后台",
         "desc": "日本后台",
         "link": "https://sellercentral-japan.amazon.com"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/12.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.com",
         "title": "美亚销售榜",
         "desc": "美亚销售榜",
         "link": "https://www.amazon.com/gp/bestsellers"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/13.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.com",
         "title": "美亚新品榜",
         "desc": "美亚新品榜",
         "link": "https://www.amazon.com/gp/new-releases"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/14.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.com",
         "title": "美亚飙升榜",
         "desc": "美亚飙升榜",
         "link": "https://www.amazon.com/gp/movers-and-shakers"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/15.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.co.uk",
         "title": "英亚销售榜",
         "desc": "英亚销售榜",
         "link": "https://www.amazon.co.uk/gp/bestsellers"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/16.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.de",
         "title": "德亚销售榜",
         "desc": "德亚销售榜",
         "link": "https://www.amazon.de/gp/bestsellers"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/17.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.amazon.com",
         "title": "Today\"s Deals",
         "desc": "Today\"s Deals",
         "link": "https://www.amazon.com/gp/goldbox"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/18.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=gs.amazon.cn",
         "title": "开店",
         "desc": "开店",
         "link": "https://gs.amazon.cn/sell?ref=as_cn_ags_hnav_sell"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/19.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=gs.amazon.cn",
         "title": "新手专区",
         "desc": "新手专区",
         "link": "https://gs.amazon.cn/beginners-guide?ref=as_cn_ags_hnav_bg_t2"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/166.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.indiegogo.com",
         "title": "Indiegogo",
         "desc": "Indiegogo",
         "link": "https://www.indiegogo.com/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/167.jpg",
+        "icon": "https://www.google.com/s2/favicons?domain=www.kickstarter.com",
         "title": "Kickstarter",
         "desc": "Kickstarter",
         "link": "https://www.kickstarter.com/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/133798532999489171.png",
+        "icon": "https://www.google.com/s2/favicons?domain=www.ikjzd.com",
         "title": "Shein开店",
         "desc": "入驻SHEIN享0入驻费、0推广费和限时免佣的【0成本入驻】政策",
         "link": "https://www.ikjzd.com/stores/1805208245967581191"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/133760275617292250.png",
+        "icon": "https://www.google.com/s2/favicons?domain=www.lecangs.com",
         "title": "乐歌海外仓",
         "desc": "头程海运、一件代发、FBA转运、海外仓储、售后托管、创意视频拍摄等一站式跨境物流服务。",
         "link": "https://www.lecangs.com/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/133760278759609878.png",
+        "icon": "https://www.google.com/s2/favicons?domain=www.wpglb.com",
         "title": "西邮物流",
         "desc": "大件出海，认准西邮",
         "link": "https://www.wpglb.com/"
       },
       {
-        "icon": "https://tools.ikjzd.com/upload/nav/133760279836247336.png",
+        "icon": "https://www.google.com/s2/favicons?domain=www.kwt56.com",
         "title": "京华达",
         "desc": "中港速运、共享智慧仓储、欧美专线小包、美国FBA空海运头程、美国末端账号、清提派、海外仓一件代发等服",
         "link": "http://www.kwt56.com"
