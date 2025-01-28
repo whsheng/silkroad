@@ -51,9 +51,24 @@ export const HoverEffect = ({
               <Image
                 src={item.icon}
                 className="overflow-hidden rounded-full object-fill"
-                alt=""
+                alt={item.title}
                 width={40}
                 height={40}
+                // onError={(e) => {
+                //   return (
+                //     <Image
+                //       src="/favicon.ico"
+                //       alt={item.title}
+                //       width={40}
+                //       height={40}
+                //       className="overflow-hidden rounded-full object-fill"
+                //     />
+                    
+                //   ) 
+             
+                // }}
+                unoptimized
+           
               />
               {item.title}
             </CardTitle>
