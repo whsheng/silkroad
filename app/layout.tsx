@@ -6,6 +6,8 @@ import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme-provider"
 
+const GA_TRACKING_ID	= 'G-0K1F6FL6L0' // Google Analytics ID 
+
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -32,10 +34,32 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
+import { usePathname, useSearchParams } from 'next/navigation'
+import { useEffect } from 'react'
+
 export default function RootLayout({ children }: RootLayoutProps) {
+
+
   return (
     <>
       <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}');
+            `,
+          }}
+        />
+      </head>
         <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
