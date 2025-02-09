@@ -6,7 +6,7 @@ import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme-provider"
 
-const GA_TRACKING_ID	= 'G-2DB31KT0QS' // Google Analytics ID 
+const GA_TRACKING_ID	= 'G-0K1F6FL6L0' // Google Analytics ID 
 
 export const metadata: Metadata = {
   title: {
