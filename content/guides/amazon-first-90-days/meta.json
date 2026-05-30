@@ -1,0 +1,11 @@
+{
+  "id": "guide-amazon-first-90-days",
+  "slug": "amazon-first-90-days",
+  "sortOrder": 1,
+  "status": "published",
+  "featuredCategorySlugs": ["popular-platforms", "core-tools", "official-portals"],
+  "featuredMarketSlugs": ["us", "eu", "uk"],
+  "featuredPlatformSlugs": ["amazon"],
+  "publishedAt": "2026-05-30",
+  "updatedAt": "2026-05-30"
+}

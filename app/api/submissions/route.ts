@@ -1,6 +1,12 @@
 import { NextResponse } from "next/server"
 
-import { createGitHubSubmissionIssue, findExistingToolByDomain, validateSubmissionPayload } from "@/lib/submissions/server"
+import {
+  createGitHubSubmissionIssue,
+  findExistingToolByDomain,
+  getRequestIpAddress,
+  validateSubmissionPayload,
+  validateTurnstileToken
+} from "@/lib/submissions/server"
 import type { SubmissionResponse } from "@/lib/submissions/types"
 
 export const runtime = "nodejs"
@@ -31,6 +37,21 @@ export async function POST(request: Request) {
         fieldErrors: validation.fieldErrors
       },
       { status: validation.code === "spam_detected" ? 400 : 422 }
+    )
+  }
+
+  const turnstileValidation = await validateTurnstileToken(
+    validation.data.turnstileToken,
+    getRequestIpAddress(request.headers)
+  )
+
+  if (!turnstileValidation.ok) {
+    return NextResponse.json<SubmissionResponse>(
+      {
+        ok: false,
+        code: turnstileValidation.code
+      },
+      { status: 400 }
     )
   }
 

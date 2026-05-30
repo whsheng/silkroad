@@ -12,6 +12,7 @@ export type SubmissionPayload = {
   contactDetails: string
   notes: string
   company?: string
+  turnstileToken?: string
 }
 
 export type SubmissionResponseCode =
@@ -21,6 +22,8 @@ export type SubmissionResponseCode =
   | "not_configured"
   | "github_failed"
   | "spam_detected"
+  | "turnstile_required"
+  | "turnstile_failed"
 
 export type SubmissionResponse = {
   ok: boolean

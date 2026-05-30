@@ -11,7 +11,7 @@ import { SectionHeading } from "@/components/public/section-heading"
 import { StatCard } from "@/components/public/stat-card"
 import { ToolGrid } from "@/components/public/tool-grid"
 import {
-  getAds,
+  getAdsForPlacement,
   getCategories,
   getFeaturedTools,
   getGuides,
@@ -59,7 +59,7 @@ function HomeContent({ locale }: { locale: Locale }) {
   const platforms = getPlatforms(locale)
   const guides = getGuides(locale)
   const tools = getFeaturedTools(locale, 9)
-  const ads = getAds(locale, "home", null)
+  const heroAds = getAdsForPlacement(locale, "home_hero_banner", "home", null)
   const stats = getStats()
 
   return (
@@ -101,7 +101,7 @@ function HomeContent({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      {ads[0] ? <AdBanner locale={locale} item={ads[0]} /> : null}
+      {heroAds[0] ? <AdBanner locale={locale} item={heroAds[0]} /> : null}
 
       <section className="grid gap-6 rounded-[2rem] border border-border/70 bg-white/85 p-8 shadow-[0_18px_60px_rgba(15,23,42,0.05)] dark:bg-card/65 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-5">

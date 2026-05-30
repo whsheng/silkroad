@@ -6,10 +6,11 @@ import { LinkTile } from "@/components/public/link-tile"
 import { PageShell } from "@/components/public/page-shell"
 import { SectionHeading } from "@/components/public/section-heading"
 import { ToolGrid } from "@/components/public/tool-grid"
-import { getCategories, getCategoryBySlug, getMarkets, getPlatforms, getToolsBySlugs } from "@/lib/content/loaders"
+import { AdBanner } from "@/components/public/ad-banner"
+import { getCategories, getCategoryBySlug, getMarkets, getPlatforms, getToolsBySlugs, getAdsForPlacement } from "@/lib/content/loaders"
 import { isLocale, locales, type Locale } from "@/lib/i18n/config"
 import { getDictionary } from "@/lib/i18n/get-dictionary"
-import { buildBreadcrumbJsonLd, buildCollectionPageJsonLd } from "@/lib/seo/json-ld"
+import { buildBreadcrumbJsonLd, buildCollectionPageJsonLd, buildFaqJsonLd } from "@/lib/seo/json-ld"
 import { buildMetadata } from "@/lib/seo/metadata"
 
 type CategoryPageProps = {
@@ -63,6 +64,30 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const tools = getToolsBySlugs(locale, category.toolSlugs)
   const markets = getMarkets(locale).filter((market) => category.marketSlugs.includes(market.slug))
   const platforms = getPlatforms(locale).filter((platform) => category.platformSlugs.includes(platform.slug))
+  const topAds = getAdsForPlacement(locale, "category_top_banner", "category", category.slug)
+  const faqItems = [
+    {
+      question: locale === "zh-CN" ? "这个分类适合谁？" : "Who is this category for?",
+      answer:
+        locale === "zh-CN"
+          ? `适合正在筛选${category.translation.name}相关工具、服务商和站点入口的中国出海团队。`
+          : `Useful for teams evaluating ${category.translation.name.toLowerCase()} tools, services, and resource sites.`
+    },
+    {
+      question: locale === "zh-CN" ? "怎么使用这页？" : "How should this page be used?",
+      answer:
+        locale === "zh-CN"
+          ? "先查看工具列表，再结合推荐市场和推荐平台页，缩小你的选择范围。"
+          : "Start with the tool list, then use the related market and platform links to narrow the decision set."
+    },
+    {
+      question: locale === "zh-CN" ? "信息是否完整？" : "Is the information complete?",
+      answer:
+        locale === "zh-CN"
+          ? "我们会持续补充价格、适用场景、服务特点与使用提示，帮助你更快完成判断。"
+          : "We continue to expand pricing notes, fit, service traits, and usage guidance to support faster decisions."
+    }
+  ]
 
   return (
     <PageShell
@@ -86,6 +111,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           `/${locale}/category/${category.slug}`
         )}
       />
+      <JsonLd data={buildFaqJsonLd(faqItems)} />
 
       <section className="space-y-5 rounded-[2rem] border border-border/70 bg-white/85 p-8 dark:bg-card/65">
         <SectionHeading
@@ -99,6 +125,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           </span>
         </div>
       </section>
+
+      {topAds[0] ? <AdBanner locale={locale} item={topAds[0]} /> : null}
 
       <section className="space-y-6">
         <SectionHeading title={dictionary.common.tools} description={category.translation.shortDescription} />
@@ -138,34 +166,16 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <SectionHeading title={dictionary.category.faqTitle} />
         <div className="mt-5 grid gap-4 md:grid-cols-3">
           <div className="rounded-3xl border border-border/70 bg-background/60 p-5">
-            <h3 className="font-semibold text-foreground">
-              {locale === "zh-CN" ? "这个分类适合谁？" : "Who is this category for?"}
-            </h3>
-            <p className="mt-3 text-sm leading-7 text-muted-foreground">
-              {locale === "zh-CN"
-                ? `适合正在筛选${category.translation.name}相关工具、服务商和站点入口的中国出海团队。`
-                : `Useful for teams evaluating ${category.translation.name.toLowerCase()} tools, services, and resource sites.`}
-            </p>
+            <h3 className="font-semibold text-foreground">{faqItems[0].question}</h3>
+            <p className="mt-3 text-sm leading-7 text-muted-foreground">{faqItems[0].answer}</p>
           </div>
           <div className="rounded-3xl border border-border/70 bg-background/60 p-5">
-            <h3 className="font-semibold text-foreground">
-              {locale === "zh-CN" ? "怎么使用这页？" : "How should this page be used?"}
-            </h3>
-            <p className="mt-3 text-sm leading-7 text-muted-foreground">
-              {locale === "zh-CN"
-                ? "先查看工具列表，再结合推荐市场和推荐平台页，缩小你的选择范围。"
-                : "Start with the tool list, then use the related market and platform links to narrow the decision set."}
-            </p>
+            <h3 className="font-semibold text-foreground">{faqItems[1].question}</h3>
+            <p className="mt-3 text-sm leading-7 text-muted-foreground">{faqItems[1].answer}</p>
           </div>
           <div className="rounded-3xl border border-border/70 bg-background/60 p-5">
-            <h3 className="font-semibold text-foreground">
-              {locale === "zh-CN" ? "信息是否完整？" : "Is the information complete?"}
-            </h3>
-            <p className="mt-3 text-sm leading-7 text-muted-foreground">
-              {locale === "zh-CN"
-                ? "我们会持续补充价格、适用场景、服务特点与使用提示，帮助你更快完成判断。"
-                : "We continue to expand pricing notes, fit, service traits, and usage guidance to support faster decisions."}
-            </p>
+            <h3 className="font-semibold text-foreground">{faqItems[2].question}</h3>
+            <p className="mt-3 text-sm leading-7 text-muted-foreground">{faqItems[2].answer}</p>
           </div>
         </div>
       </section>

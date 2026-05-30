@@ -9,7 +9,7 @@ import { ToolGrid } from "@/components/public/tool-grid"
 import { getCategories, getMarkets, getPlatformBySlug, getPlatforms, getTools } from "@/lib/content/loaders"
 import { isLocale, locales } from "@/lib/i18n/config"
 import { getDictionary } from "@/lib/i18n/get-dictionary"
-import { buildBreadcrumbJsonLd, buildCollectionPageJsonLd } from "@/lib/seo/json-ld"
+import { buildBreadcrumbJsonLd, buildCollectionPageJsonLd, buildFaqJsonLd } from "@/lib/seo/json-ld"
 import { buildMetadata } from "@/lib/seo/metadata"
 
 type PlatformPageProps = {
@@ -67,6 +67,29 @@ export default async function PlatformPage({ params }: PlatformPageProps) {
     (market) => platform.featuredMarketSlugs.includes(market.slug) || market.featuredPlatformSlugs.includes(platform.slug)
   )
   const tools = getTools(locale).filter((tool) => tool.platformSlugs.includes(platform.slug)).slice(0, 36)
+  const faqItems = [
+    {
+      question: locale === "zh-CN" ? `${platform.translation.name}页面适合谁看？` : `Who should use the ${platform.translation.name} page?`,
+      answer:
+        locale === "zh-CN"
+          ? `适合已经确定重点做${platform.translation.name}，正在筛选配套工具、服务商与目标市场的团队。`
+          : `Useful for teams already prioritizing ${platform.translation.name} and evaluating the supporting tool and market stack.`
+    },
+    {
+      question: locale === "zh-CN" ? "先筛工具还是先筛市场？" : "Should teams start with tools or markets first?",
+      answer:
+        locale === "zh-CN"
+          ? "如果平台打法差异更大，先看平台页；如果区域差异更大，再结合市场页判断本地化和履约要求。"
+          : "Start with the platform page when channel mechanics matter most, then use market pages when regional localization and fulfilment differences drive the decision."
+    },
+    {
+      question: locale === "zh-CN" ? "这页内容会持续更新吗？" : "Will this page keep evolving?",
+      answer:
+        locale === "zh-CN"
+          ? "会，平台页会持续补充更适合该平台的分类入口、工具集合和运营判断信息。"
+          : "Yes. Platform pages will continue to expand with better category paths, tool sets, and operating guidance tied to that channel."
+    }
+  ]
 
   return (
     <PageShell
@@ -90,6 +113,7 @@ export default async function PlatformPage({ params }: PlatformPageProps) {
           `/${locale}/platform/${platform.slug}`
         )}
       />
+      <JsonLd data={buildFaqJsonLd(faqItems)} />
 
       <section className="space-y-5 rounded-[2rem] border border-border/70 bg-white/85 p-8 dark:bg-card/65">
         <SectionHeading eyebrow={dictionary.platform.pageIntro} title={platform.translation.name} description={platform.translation.intro} />
@@ -124,6 +148,18 @@ export default async function PlatformPage({ params }: PlatformPageProps) {
               description={market.translation.shortDescription}
               href={`/${locale}/market/${market.slug}`}
             />
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-[2rem] border border-border/70 bg-white/85 p-8 dark:bg-card/65">
+        <SectionHeading title={locale === "zh-CN" ? "常见问题" : "FAQ"} />
+        <div className="mt-5 grid gap-4 md:grid-cols-3">
+          {faqItems.map((item) => (
+            <div key={item.question} className="rounded-3xl border border-border/70 bg-background/60 p-5">
+              <h3 className="font-semibold text-foreground">{item.question}</h3>
+              <p className="mt-3 text-sm leading-7 text-muted-foreground">{item.answer}</p>
+            </div>
           ))}
         </div>
       </section>

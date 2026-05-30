@@ -2,6 +2,7 @@ import "@/styles/globals.css"
 
 import type { Metadata } from "next"
 
+import { GoogleAnalytics } from "@/components/public/google-analytics"
 import { buildMetadata } from "@/lib/seo/metadata"
 
 export const metadata: Metadata = buildMetadata({
@@ -21,9 +22,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim()
+
   return (
     <html lang="zh-CN" suppressHydrationWarning>
-      <body className="min-h-screen bg-background font-sans text-foreground antialiased">{children}</body>
+      <body className="min-h-screen bg-background font-sans text-foreground antialiased">
+        {children}
+        <GoogleAnalytics measurementId={measurementId} />
+      </body>
     </html>
   )
 }

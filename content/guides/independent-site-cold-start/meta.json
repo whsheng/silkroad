@@ -1,0 +1,11 @@
+{
+  "id": "guide-independent-site-cold-start",
+  "slug": "independent-site-cold-start",
+  "sortOrder": 2,
+  "status": "published",
+  "featuredCategorySlugs": ["independent-sites", "recommended-plugins", "ai-toolbox"],
+  "featuredMarketSlugs": ["us", "eu", "sea"],
+  "featuredPlatformSlugs": ["shopify", "independent-site"],
+  "publishedAt": "2026-05-30",
+  "updatedAt": "2026-05-30"
+}

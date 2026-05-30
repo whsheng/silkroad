@@ -41,6 +41,9 @@ export type ToolRecord = {
   supportsChinese: boolean
   verificationStatus: "seed" | "reviewed"
   sourceType: "seed_import" | "manual_editor"
+  sourceIssueNumber?: number
+  reviewStatus?: "pending-review" | "needs-info" | "approved" | "rejected" | "published"
+  reviewedAt?: string
   categorySlugs: string[]
   marketSlugs: string[]
   platformSlugs: string[]
@@ -69,21 +72,39 @@ export type GuideRecord = {
   id: string
   slug: string
   sortOrder: number
+  status?: "published" | "draft"
   featuredCategorySlugs: string[]
   featuredMarketSlugs: string[]
   featuredPlatformSlugs: string[]
   publishedAt: string
   updatedAt: string
-  translations: Record<
+  translations: Partial<Record<
     Locale,
-    {
-      title: string
-      summary: string
-      content: string[]
-      seoTitle: string
-      seoDescription: string
+    GuideTranslation
+  >>
+}
+
+export type GuideContentBlock =
+  | {
+      type: "paragraph" | "blockquote"
+      content: string
     }
-  >
+  | {
+      type: "heading"
+      level: 2 | 3
+      content: string
+    }
+  | {
+      type: "bulletList" | "numberedList"
+      items: string[]
+    }
+
+export type GuideTranslation = {
+  title: string
+  summary: string
+  content: GuideContentBlock[]
+  seoTitle: string
+  seoDescription: string
 }
 
 export type AdPlacementRecord = {
@@ -99,6 +120,9 @@ export type AdItemRecord = {
   locale: Locale
   targetType: "home" | "category" | "market" | "platform" | "guide"
   targetSlug: string | null
+  priority: number
+  startDate: string | null
+  endDate: string | null
   title: string
   description: string
   ctaText: string

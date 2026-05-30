@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react"
 
+import { TurnstileWidget } from "@/components/public/turnstile-widget"
 import { Button } from "@/components/ui/button"
 import type { Locale } from "@/lib/i18n/config"
 import type { Dictionary } from "@/lib/i18n/get-dictionary"
@@ -18,6 +19,7 @@ type SubmitFormProps = {
   categories: SubmissionOption[]
   markets: SubmissionOption[]
   platforms: SubmissionOption[]
+  turnstileSiteKey?: string
 }
 
 type FeedbackState =
@@ -57,14 +59,20 @@ function getErrorDescription(copy: Dictionary["submit"], code: SubmissionRespons
       return copy.feedback.configError
     case "spam_detected":
       return copy.feedback.spamError
+    case "turnstile_required":
+      return copy.feedback.turnstileRequired
+    case "turnstile_failed":
+      return copy.feedback.turnstileFailed
     default:
       return copy.feedback.errorDescription
   }
 }
 
-export function SubmitForm({ locale, copy, categories, markets, platforms }: SubmitFormProps) {
+export function SubmitForm({ locale, copy, categories, markets, platforms, turnstileSiteKey }: SubmitFormProps) {
   const [feedback, setFeedback] = useState<FeedbackState>({ status: "idle" })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [turnstileToken, setTurnstileToken] = useState("")
+  const [turnstileResetKey, setTurnstileResetKey] = useState(0)
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -82,7 +90,16 @@ export function SubmitForm({ locale, copy, categories, markets, platforms }: Sub
       contactName: getStringValue(formData, "contactName"),
       contactDetails: getStringValue(formData, "contactDetails"),
       notes: getStringValue(formData, "notes"),
-      company: getStringValue(formData, "company")
+      company: getStringValue(formData, "company"),
+      turnstileToken
+    }
+
+    if (turnstileSiteKey && !turnstileToken) {
+      setFeedback({
+        status: "error",
+        code: "turnstile_required"
+      })
+      return
     }
 
     setIsSubmitting(true)
@@ -101,6 +118,7 @@ export function SubmitForm({ locale, copy, categories, markets, platforms }: Sub
 
       if (response.ok && result?.ok) {
         form.reset()
+        setTurnstileToken("")
         setFeedback({
           status: "success",
           issueNumber: result.issueNumber,
@@ -128,6 +146,11 @@ export function SubmitForm({ locale, copy, categories, markets, platforms }: Sub
       })
     } finally {
       setIsSubmitting(false)
+
+      if (turnstileSiteKey) {
+        setTurnstileToken("")
+        setTurnstileResetKey((current) => current + 1)
+      }
     }
   }
 
@@ -228,6 +251,24 @@ export function SubmitForm({ locale, copy, categories, markets, platforms }: Sub
         <label htmlFor="company">Company</label>
         <input id="company" name="company" type="text" tabIndex={-1} autoComplete="off" />
       </div>
+
+      {turnstileSiteKey ? (
+        <div className="space-y-3 rounded-[1.5rem] border border-border/70 bg-background/70 p-4">
+          <p className="text-sm leading-6 text-muted-foreground">{copy.securityNotice}</p>
+          <TurnstileWidget
+            locale={locale}
+            siteKey={turnstileSiteKey}
+            resetKey={turnstileResetKey}
+            onTokenChange={setTurnstileToken}
+            onWidgetError={() => {
+              setFeedback({
+                status: "error",
+                code: "turnstile_failed"
+              })
+            }}
+          />
+        </div>
+      ) : null}
 
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-sm leading-6 text-muted-foreground">{copy.reviewNotice}</p>

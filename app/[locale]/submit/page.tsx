@@ -8,6 +8,7 @@ import { getCategories, getMarkets, getPlatforms } from "@/lib/content/loaders"
 import { isLocale } from "@/lib/i18n/config"
 import { getDictionary } from "@/lib/i18n/get-dictionary"
 import { buildMetadata } from "@/lib/seo/metadata"
+import { isTurnstileEnabled } from "@/lib/submissions/server"
 
 type SubmitPageProps = {
   params: Promise<{ locale: string }>
@@ -38,6 +39,7 @@ export default async function SubmitPage({ params }: SubmitPageProps) {
   }
 
   const dictionary = getDictionary(locale)
+  const turnstileSiteKey = isTurnstileEnabled() ? process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim() : undefined
   const categories = getCategories(locale).map((category) => ({
     slug: category.slug,
     label: category.translation.name
@@ -68,6 +70,7 @@ export default async function SubmitPage({ params }: SubmitPageProps) {
           categories={categories}
           markets={markets}
           platforms={platforms}
+          turnstileSiteKey={turnstileSiteKey}
         />
       </section>
 

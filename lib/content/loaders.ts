@@ -3,12 +3,14 @@ import fs from "node:fs"
 import path from "node:path"
 
 import { defaultLocale, locales, type Locale } from "@/lib/i18n/config"
+import guideContentUtils from "@/lib/content/guides-shared.js"
 import type {
   AdItemRecord,
   AdPlacementRecord,
   CategoryRecord,
   ContentData,
   GuideRecord,
+  GuideTranslation,
   MarketRecord,
   PlatformRecord,
   SearchEntry,
@@ -17,6 +19,7 @@ import type {
 } from "@/lib/content/types"
 
 const contentRoot = path.join(process.cwd(), "content")
+const adScheduleTimeZone = "Asia/Shanghai"
 
 function readJsonFile<T>(relativePath: string): T {
   const filePath = path.join(contentRoot, relativePath)
@@ -29,7 +32,11 @@ export const getContentData = cache((): ContentData => {
   const tools = readJsonFile<ToolRecord[]>("tools/index.json")
   const markets = readJsonFile<MarketRecord[]>("markets/index.json")
   const platforms = readJsonFile<PlatformRecord[]>("platforms/index.json")
-  const guides = readJsonFile<GuideRecord[]>("guides/index.json")
+  const guides = guideContentUtils.loadGuideRecordsFromContent(contentRoot, {
+    defaultLocale,
+    locales,
+    includeDrafts: false
+  }) as GuideRecord[]
   const adPlacements = readJsonFile<AdPlacementRecord[]>("ads/placements.json")
   const adItems = readJsonFile<AdItemRecord[]>("ads/items.json")
 
@@ -131,19 +138,57 @@ export function getGuides(locale: Locale) {
     .sort((left, right) => left.sortOrder - right.sortOrder)
     .map((guide) => ({
       ...guide,
-      translation: guide.translations[locale] ?? guide.translations[defaultLocale]
+      translation: (guide.translations[locale] ?? guide.translations[defaultLocale]) as GuideTranslation | undefined
     }))
+    .filter((guide): guide is GuideRecord & { translation: GuideTranslation } => Boolean(guide.translation))
 }
 
 export function getGuideBySlug(locale: Locale, slug: string) {
   return getGuides(locale).find((guide) => guide.slug === slug)
 }
 
-export function getAds(locale: Locale, targetType: AdItemRecord["targetType"], targetSlug: string | null = null) {
-  return getContentData().adItems.filter(
-    (item) =>
-      item.status === "active" && item.locale === locale && item.targetType === targetType && item.targetSlug === targetSlug
-  )
+function getCurrentDateKey() {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: adScheduleTimeZone
+  }).format(new Date())
+}
+
+function isAdLive(item: AdItemRecord, dateKey: string) {
+  const startsBeforeOrToday = !item.startDate || item.startDate <= dateKey
+  const endsAfterOrToday = !item.endDate || item.endDate >= dateKey
+
+  return item.status === "active" && startsBeforeOrToday && endsAfterOrToday
+}
+
+export function getAdsForPlacement(
+  locale: Locale,
+  placementKey: string,
+  targetType: AdItemRecord["targetType"],
+  targetSlug: string | null = null
+) {
+  const data = getContentData()
+  const placement = data.adPlacements.find((item) => item.key === placementKey)
+
+  if (!placement) {
+    return []
+  }
+
+  const today = getCurrentDateKey()
+
+  return data.adItems
+    .filter((item) => {
+      if (item.locale !== locale || item.placementKey !== placementKey || item.targetType !== targetType) {
+        return false
+      }
+
+      if (!isAdLive(item, today)) {
+        return false
+      }
+
+      return item.targetSlug === null || item.targetSlug === targetSlug
+    })
+    .sort((left, right) => right.priority - left.priority)
+    .slice(0, placement.maxItems)
 }
 
 export function getStats() {

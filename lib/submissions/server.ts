@@ -45,9 +45,20 @@ type NormalizedSubmission = {
   contactName: string
   contactDetails: string
   notes: string
+  turnstileToken: string
 }
 
 const GITHUB_API_VERSION = "2022-11-28"
+const TURNSTILE_VERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify"
+
+type TurnstileVerificationResult =
+  | {
+      ok: true
+    }
+  | {
+      ok: false
+      code: "turnstile_required" | "turnstile_failed"
+    }
 
 function sanitizeInline(value: unknown) {
   return typeof value === "string" ? value.replace(/\s+/g, " ").trim() : ""
@@ -113,6 +124,7 @@ export function validateSubmissionPayload(payload: unknown): ValidationResult {
   const contactDetails = sanitizeInline(source.contactDetails)
   const notes = sanitizeMultiline(source.notes)
   const company = sanitizeInline(source.company)
+  const turnstileToken = sanitizeInline(source.turnstileToken)
   const categorySlugs = normalizeSelection(source.categorySlugs)
   const marketSlugs = normalizeSelection(source.marketSlugs)
   const platformSlugs = normalizeSelection(source.platformSlugs)
@@ -185,7 +197,8 @@ export function validateSubmissionPayload(payload: unknown): ValidationResult {
       platformSlugs,
       contactName,
       contactDetails,
-      notes
+      notes,
+      turnstileToken
     }
   }
 }
@@ -270,12 +283,96 @@ function buildIssueBody(submission: NormalizedSubmission) {
     submission.notes || "- None",
     "",
     "## Review Checklist",
+    "- [ ] Review label moved from `pending-review` to the next status",
     "- [ ] URL is reachable and relevant",
     "- [ ] Not already indexed in `content/tools/index.json`",
     "- [ ] Category, market, and platform tags confirmed",
     "- [ ] Copy edited for public listing",
     "- [ ] Content prepared for merge and next deployment"
   ].join("\n")
+}
+
+function getTurnstileSecretKey() {
+  const secretKey = process.env.TURNSTILE_SECRET_KEY?.trim()
+  return secretKey ? secretKey : null
+}
+
+export function isTurnstileEnabled() {
+  return Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim() && getTurnstileSecretKey())
+}
+
+export function getRequestIpAddress(headers: Headers) {
+  const remoteIp =
+    headers.get("CF-Connecting-IP")?.trim() ??
+    headers
+      .get("X-Forwarded-For")
+      ?.split(",")
+      .map((item) => item.trim())
+      .find(Boolean) ??
+    null
+
+  return remoteIp || null
+}
+
+export async function validateTurnstileToken(token: string, remoteIp: string | null): Promise<TurnstileVerificationResult> {
+  const secretKey = getTurnstileSecretKey()
+
+  if (!secretKey) {
+    return {
+      ok: true
+    }
+  }
+
+  if (!token) {
+    return {
+      ok: false,
+      code: "turnstile_required"
+    }
+  }
+
+  const response = await fetch(TURNSTILE_VERIFY_URL, {
+    method: "POST",
+    cache: "no-store",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      secret: secretKey,
+      response: token,
+      remoteip: remoteIp,
+      idempotency_key: crypto.randomUUID()
+    })
+  })
+
+  const responseText = await response.text()
+
+  if (!response.ok) {
+    console.error("Turnstile verification request failed", response.status, responseText)
+
+    return {
+      ok: false,
+      code: "turnstile_failed"
+    }
+  }
+
+  const result = JSON.parse(responseText) as {
+    success?: boolean
+    hostname?: string
+    "error-codes"?: string[]
+  }
+
+  if (result.success !== true) {
+    console.error("Turnstile verification rejected submission", result["error-codes"] ?? [])
+
+    return {
+      ok: false,
+      code: "turnstile_failed"
+    }
+  }
+
+  return {
+    ok: true
+  }
 }
 
 export async function createGitHubSubmissionIssue(submission: NormalizedSubmission): Promise<GitHubIssueResult> {

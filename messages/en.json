@@ -95,6 +95,7 @@
       "Editors enrich category, market, and summary",
       "Merge the content change and publish automatically"
     ],
+    "securityNotice": "Complete the security check before submitting to reduce spam.",
     "requiredHint": "Fields marked with * are required. Make sure the site is reachable and relevant to global trade workflows.",
     "reviewNotice": "Submissions are reviewed manually to confirm relevance, avoid duplicates, and maintain listing quality.",
     "submitButton": "Submit site",
@@ -137,7 +138,9 @@
       "errorDescription": "The site could not create a GitHub Issue right now. Please try again later.",
       "validationError": "The submission did not pass basic validation. Please review the URL, description, and contact details.",
       "configError": "The submission service is temporarily unavailable. Please try again later.",
-      "spamError": "The submission did not pass the anti-spam check. Refresh and try again."
+      "spamError": "The submission did not pass the anti-spam check. Refresh and try again.",
+      "turnstileRequired": "Complete the security check before submitting the site.",
+      "turnstileFailed": "The security check failed or expired. Please complete it again and retry."
     }
   },
   "footer": {

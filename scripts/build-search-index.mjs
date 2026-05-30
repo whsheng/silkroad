@@ -1,10 +1,12 @@
 import fs from "node:fs"
 import path from "node:path"
+import guideContentUtils from "../lib/content/guides-shared.js"
 
 const repoRoot = process.cwd()
 const contentRoot = path.join(repoRoot, "content")
 const outputRoot = path.join(repoRoot, "public", "generated", "search")
 const locales = ["zh-CN", "en"]
+const defaultLocale = "zh-CN"
 
 function readJson(relativePath) {
   return JSON.parse(fs.readFileSync(path.join(contentRoot, relativePath), "utf8"))
@@ -21,7 +23,11 @@ function main() {
   const tools = readJson("tools/index.json")
   const markets = readJson("markets/index.json")
   const platforms = readJson("platforms/index.json")
-  const guides = readJson("guides/index.json")
+  const guides = guideContentUtils.loadGuideRecordsFromContent(contentRoot, {
+    defaultLocale,
+    locales,
+    includeDrafts: false
+  })
 
   locales.forEach((locale) => {
     const categoryTranslations = readJson(`categories/translations/${locale}.json`)
@@ -52,8 +58,8 @@ function main() {
       })),
       ...guides.map((guide) => ({
         type: "guide",
-        title: guide.translations[locale].title,
-        description: guide.translations[locale].summary,
+        title: (guide.translations[locale] ?? guide.translations[defaultLocale]).title,
+        description: (guide.translations[locale] ?? guide.translations[defaultLocale]).summary,
         href: `/${locale}/guide/${guide.slug}`,
         external: false
       })),

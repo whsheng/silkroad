@@ -10,5 +10,11 @@
     "name": "分类页顶部赞助位",
     "description": "分类页顶部赞助内容预留位",
     "maxItems": 1
+  },
+  {
+    "key": "guide_inline_banner",
+    "name": "专题页内嵌赞助位",
+    "description": "专题内容与相关入口之间的赞助展示位",
+    "maxItems": 1
   }
 ]
