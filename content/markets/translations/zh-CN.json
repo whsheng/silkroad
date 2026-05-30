@@ -1,0 +1,37 @@
+{
+  "us": {
+    "name": "美国市场",
+    "shortDescription": "适合中国卖家优先进入的成熟跨境电商市场，覆盖亚马逊、独立站、支付与物流服务。",
+    "seoTitle": "美国市场工具导航 | Silkroads Trade",
+    "seoDescription": "聚合美国市场常用平台、支付、物流、建站与营销工具，帮助中国卖家更快制定出海方案。",
+    "intro": "美国市场仍是中国跨境卖家的核心目标市场，工具选择需要兼顾流量、履约、支付和品牌化运营。"
+  },
+  "eu": {
+    "name": "欧洲市场",
+    "shortDescription": "重点关注欧洲站点、VAT、合规与本地履约资源，适合品牌化与多站点布局。",
+    "seoTitle": "欧洲市场工具导航 | Silkroads Trade",
+    "seoDescription": "围绕欧洲平台、合规、物流、支付和本地化增长工具构建的市场入口。",
+    "intro": "欧洲市场重视合规和多语言运营，适合中长期品牌布局与多国运营。"
+  },
+  "uk": {
+    "name": "英国市场",
+    "shortDescription": "适合独立拆分观察的平台和合规市场，关注站点运营、物流和税务工具。",
+    "seoTitle": "英国市场工具导航 | Silkroads Trade",
+    "seoDescription": "聚合英国市场的平台、物流、支付与税务相关工具和服务商。",
+    "intro": "英国市场适合单独建模，便于评估本地配送、税务与站点策略。"
+  },
+  "sea": {
+    "name": "东南亚市场",
+    "shortDescription": "面向 TikTok Shop、本地平台与独立站增长的快节奏市场，关注履约和渠道搭建。",
+    "seoTitle": "东南亚市场工具导航 | Silkroads Trade",
+    "seoDescription": "查看适合东南亚市场的平台、内容电商、物流和本地化运营工具。",
+    "intro": "东南亚市场增长快，适合内容电商、短视频分销与多平台布局。"
+  },
+  "middle-east": {
+    "name": "中东市场",
+    "shortDescription": "聚焦本地渠道、支付方式与区域履约资源，适合探索差异化增长路径。",
+    "seoTitle": "中东市场工具导航 | Silkroads Trade",
+    "seoDescription": "查看中东市场相关的平台、支付、履约和营销工具。",
+    "intro": "中东市场具备高客单与渠道差异，适合做好支付和本地履约准备。"
+  }
+}

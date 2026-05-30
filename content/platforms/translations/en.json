@@ -1,0 +1,37 @@
+{
+  "amazon": {
+    "name": "Amazon",
+    "shortDescription": "A mature ecosystem spanning operations, ads, sourcing, logistics, and account workflows.",
+    "seoTitle": "Amazon Tools | Silkroads Trade",
+    "seoDescription": "Explore tools and service providers relevant to Amazon operations and growth.",
+    "intro": "Amazon remains a core platform for China-based sellers and requires mature tooling across the stack."
+  },
+  "shopify": {
+    "name": "Shopify",
+    "shortDescription": "Popular for independent sites, plugins, marketing automation, and brand-led growth.",
+    "seoTitle": "Shopify Tools | Silkroads Trade",
+    "seoDescription": "Find tools and resources for Shopify storefronts, plugins, and growth operations.",
+    "intro": "Shopify is widely used for brand-owned stores and long-term owned-channel growth."
+  },
+  "tiktok-shop": {
+    "name": "TikTok Shop",
+    "shortDescription": "Fast-growing content commerce ecosystem for short-form video and creator partnerships.",
+    "seoTitle": "TikTok Shop Tools | Silkroads Trade",
+    "seoDescription": "Tooling and services for TikTok Shop operations, creative workflows, and fulfillment.",
+    "intro": "TikTok Shop favors teams with strong creative and creator collaboration workflows."
+  },
+  "independent-site": {
+    "name": "Independent Sites",
+    "shortDescription": "Build owned-channel growth across storefront, SEO, content, and automation workflows.",
+    "seoTitle": "Independent Site Tools | Silkroads Trade",
+    "seoDescription": "Explore tooling for owned storefronts, SEO, content, and automation.",
+    "intro": "Independent sites let teams build owned traffic and customer relationships over time."
+  },
+  "walmart": {
+    "name": "Walmart",
+    "shortDescription": "Useful for multi-channel expansion with a focus on rules, fulfillment, and partner fit.",
+    "seoTitle": "Walmart Tools | Silkroads Trade",
+    "seoDescription": "Explore resources and partners relevant to Walmart marketplace expansion.",
+    "intro": "Walmart can complement larger marketplace strategies when teams align on fulfillment and compliance."
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "popular-platforms": {
+    "locale": "en",
+    "name": "Popular Platforms",
+    "shortDescription": "A curated entry point for popular platforms relevant to China-based global commerce teams.",
+    "seoTitle": "Popular Platforms | Silkroads Trade",
+    "seoDescription": "A curated entry point for popular platforms relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "Popular Platforms helps global growth teams browse tools and providers in a more structured way."
+  },
+  "core-tools": {
+    "locale": "en",
+    "name": "Core Tools",
+    "shortDescription": "A curated entry point for core tools relevant to China-based global commerce teams.",
+    "seoTitle": "Core Tools | Silkroads Trade",
+    "seoDescription": "A curated entry point for core tools relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "Core Tools helps global growth teams browse tools and providers in a more structured way."
+  },
+  "platform-directory": {
+    "locale": "en",
+    "name": "Platform Directory",
+    "shortDescription": "A curated entry point for platform directory relevant to China-based global commerce teams.",
+    "seoTitle": "Platform Directory | Silkroads Trade",
+    "seoDescription": "A curated entry point for platform directory relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "Platform Directory helps global growth teams browse tools and providers in a more structured way."
+  },
+  "forums-news": {
+    "locale": "en",
+    "name": "Forums & News",
+    "shortDescription": "A curated entry point for forums & news relevant to China-based global commerce teams.",
+    "seoTitle": "Forums & News | Silkroads Trade",
+    "seoDescription": "A curated entry point for forums & news relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "Forums & News helps global growth teams browse tools and providers in a more structured way."
+  },
+  "cross-border-services": {
+    "locale": "en",
+    "name": "Cross-border Services",
+    "shortDescription": "A curated entry point for cross-border services relevant to China-based global commerce teams.",
+    "seoTitle": "Cross-border Services | Silkroads Trade",
+    "seoDescription": "A curated entry point for cross-border services relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "Cross-border Services helps global growth teams browse tools and providers in a more structured way."
+  },
+  "training-courses": {
+    "locale": "en",
+    "name": "Training & Courses",
+    "shortDescription": "A curated entry point for training & courses relevant to China-based global commerce teams.",
+    "seoTitle": "Training & Courses | Silkroads Trade",
+    "seoDescription": "A curated entry point for training & courses relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "Training & Courses helps global growth teams browse tools and providers in a more structured way."
+  },
+  "local-sourcing": {
+    "locale": "en",
+    "name": "Local Sourcing",
+    "shortDescription": "A curated entry point for local sourcing relevant to China-based global commerce teams.",
+    "seoTitle": "Local Sourcing | Silkroads Trade",
+    "seoDescription": "A curated entry point for local sourcing relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "Local Sourcing helps global growth teams browse tools and providers in a more structured way."
+  },
+  "ai-toolbox": {
+    "locale": "en",
+    "name": "AI Toolbox",
+    "shortDescription": "A curated entry point for ai toolbox relevant to China-based global commerce teams.",
+    "seoTitle": "AI Toolbox | Silkroads Trade",
+    "seoDescription": "A curated entry point for ai toolbox relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "AI Toolbox helps global growth teams browse tools and providers in a more structured way."
+  },
+  "independent-sites": {
+    "locale": "en",
+    "name": "Independent Sites",
+    "shortDescription": "A curated entry point for independent sites relevant to China-based global commerce teams.",
+    "seoTitle": "Independent Sites | Silkroads Trade",
+    "seoDescription": "A curated entry point for independent sites relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "Independent Sites helps global growth teams browse tools and providers in a more structured way."
+  },
+  "official-portals": {
+    "locale": "en",
+    "name": "Official Portals",
+    "shortDescription": "A curated entry point for official portals relevant to China-based global commerce teams.",
+    "seoTitle": "Official Portals | Silkroads Trade",
+    "seoDescription": "A curated entry point for official portals relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "Official Portals helps global growth teams browse tools and providers in a more structured way."
+  },
+  "recommended-plugins": {
+    "locale": "en",
+    "name": "Recommended Plugins",
+    "shortDescription": "A curated entry point for recommended plugins relevant to China-based global commerce teams.",
+    "seoTitle": "Recommended Plugins | Silkroads Trade",
+    "seoDescription": "A curated entry point for recommended plugins relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "Recommended Plugins helps global growth teams browse tools and providers in a more structured way."
+  },
+  "local-market-news": {
+    "locale": "en",
+    "name": "Local Market News",
+    "shortDescription": "A curated entry point for local market news relevant to China-based global commerce teams.",
+    "seoTitle": "Local Market News | Silkroads Trade",
+    "seoDescription": "A curated entry point for local market news relevant to China-based global commerce teams. Explore tools, services, and platforms in this category.",
+    "intro": "Local Market News helps global growth teams browse tools and providers in a more structured way."
+  }
+}

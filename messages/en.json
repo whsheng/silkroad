@@ -1,0 +1,125 @@
+{
+  "header": {
+    "tagline": "A tool decision hub for China-based global sellers",
+    "search": "Search tools, categories, markets, and guides",
+    "submit": "Submit a site",
+    "home": "Home"
+  },
+  "common": {
+    "categories": "Categories",
+    "markets": "Markets",
+    "platforms": "Platforms",
+    "guides": "Guides",
+    "tools": "Tools",
+    "featured": "Featured",
+    "viewAll": "View all",
+    "openWebsite": "Visit website",
+    "updated": "Updated",
+    "sponsored": "Sponsored",
+    "backHome": "Back home",
+    "search": "Search",
+    "browseCategory": "Browse category",
+    "empty": "No content available yet",
+    "stats": {
+      "tools": "Indexed tools",
+      "categories": "Core categories",
+      "markets": "Priority markets",
+      "platforms": "Priority platforms"
+    }
+  },
+  "home": {
+    "eyebrow": "Static publishing + scenario-driven decisions",
+    "title": "Help China-based teams choose the right platforms, tools, and service partners faster",
+    "description": "Built around cross-border commerce, independent sites, logistics, payment, compliance, and AI tooling with search-friendly and scalable content.",
+    "primaryCta": "Browse categories",
+    "secondaryCta": "Read guides",
+    "featuredCategories": "Core categories",
+    "featuredTools": "Featured tools",
+    "featuredMarkets": "Priority markets",
+    "featuredPlatforms": "Priority platforms",
+    "featuredGuides": "Operational guides",
+    "submissionTitle": "User submissions are now open",
+    "submissionDescription": "The minimal workflow creates a GitHub Issue first, then editors review and publish approved entries.",
+    "submissionCta": "Submit a site",
+    "sponsorTitle": "Sponsor slot reserved",
+    "sponsorDescription": "Phase 1 reserves sponsor placements without adding heavy third-party ad scripts."
+  },
+  "category": {
+    "toolCount": "Tool count",
+    "relatedMarkets": "Related markets",
+    "relatedPlatforms": "Related platforms",
+    "pageIntro": "Category overview",
+    "faqTitle": "How to use this category"
+  },
+  "market": {
+    "pageIntro": "Market overview",
+    "recommendedCategories": "Recommended categories"
+  },
+  "platform": {
+    "pageIntro": "Platform overview",
+    "recommendedCategories": "Recommended categories"
+  },
+  "guide": {
+    "overview": "Guide overview",
+    "relatedLinks": "Related entry points"
+  },
+  "submit": {
+    "title": "Submit a new site",
+    "description": "After submission, the site creates a GitHub Issue for editorial review, classification, and publishing.",
+    "processTitle": "Planned submission process",
+    "process": [
+      "Submit a site with contact details",
+      "Run duplicate checks and basic validation",
+      "Editors enrich category, market, and summary",
+      "Merge the content change and publish automatically"
+    ],
+    "requiredHint": "Fields marked with * are required. Make sure the site is reachable and relevant to global trade workflows.",
+    "reviewNotice": "This is still a human review workflow. We check duplicates, validate fit, and then prepare approved content for publishing.",
+    "submitButton": "Submit site",
+    "submitting": "Submitting...",
+    "fields": {
+      "siteName": "Site name *",
+      "siteUrl": "Website URL *",
+      "description": "Site description *",
+      "contactName": "Contact name *",
+      "contactDetails": "Contact details *",
+      "notes": "Additional notes"
+    },
+    "placeholders": {
+      "siteName": "Example: ERP tool, logistics service, sourcing platform",
+      "siteUrl": "Example: https://example.com",
+      "description": "Explain what the site does, who it serves, and why it is useful for China-based global teams.",
+      "contactName": "Your name or team name",
+      "contactDetails": "Email, WeChat, Telegram, or another reliable contact method",
+      "notes": "Optional details such as target markets, language support, or partnership notes."
+    },
+    "sections": {
+      "categories": "Suggested categories",
+      "markets": "Suggested markets",
+      "platforms": "Suggested platforms"
+    },
+    "hints": {
+      "categories": "Multi-select is supported and helps editors classify the submission faster.",
+      "markets": "Tag the regions you mainly serve if the site is market-specific.",
+      "platforms": "Select Amazon, Shopify, owned channels, or other relevant platform contexts."
+    },
+    "feedback": {
+      "successTitle": "Submission added to the review queue",
+      "successDescription": "A GitHub Issue was created for editorial review and follow-up publishing work.",
+      "viewIssue": "View GitHub Issue",
+      "issueNumber": "Issue number",
+      "duplicateTitle": "This site appears to be already indexed",
+      "duplicateDescription": "The domain matches an existing listing, so no new submission issue was created.",
+      "existingSite": "Existing listing",
+      "errorTitle": "Submission failed",
+      "errorDescription": "The site could not create a GitHub Issue right now. Please try again later.",
+      "validationError": "The submission did not pass basic validation. Please review the URL, description, and contact details.",
+      "configError": "The submission service is not fully configured yet. The deployment environment still needs GitHub env vars.",
+      "spamError": "The submission did not pass the anti-spam check. Refresh and try again."
+    }
+  },
+  "footer": {
+    "description": "Silkroads Trade helps China-based teams evaluate tools, markets, and service providers for global growth.",
+    "copyright": "Copyright © 2026 Silkroads Trade"
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "platform-amazon",
+    "slug": "amazon",
+    "sortOrder": 1,
+    "featuredCategorySlugs": [
+      "popular-platforms",
+      "cross-border-services",
+      "official-portals"
+    ],
+    "featuredMarketSlugs": [
+      "us",
+      "eu",
+      "uk"
+    ]
+  },
+  {
+    "id": "platform-shopify",
+    "slug": "shopify",
+    "sortOrder": 2,
+    "featuredCategorySlugs": [
+      "independent-sites",
+      "recommended-plugins",
+      "ai-toolbox"
+    ],
+    "featuredMarketSlugs": [
+      "us",
+      "eu",
+      "sea"
+    ]
+  },
+  {
+    "id": "platform-tiktok-shop",
+    "slug": "tiktok-shop",
+    "sortOrder": 3,
+    "featuredCategorySlugs": [
+      "popular-platforms",
+      "ai-toolbox",
+      "training-courses"
+    ],
+    "featuredMarketSlugs": [
+      "sea",
+      "us"
+    ]
+  },
+  {
+    "id": "platform-independent-site",
+    "slug": "independent-site",
+    "sortOrder": 4,
+    "featuredCategorySlugs": [
+      "independent-sites",
+      "recommended-plugins",
+      "ai-toolbox"
+    ],
+    "featuredMarketSlugs": [
+      "us",
+      "eu",
+      "middle-east"
+    ]
+  },
+  {
+    "id": "platform-walmart",
+    "slug": "walmart",
+    "sortOrder": 5,
+    "featuredCategorySlugs": [
+      "platform-directory",
+      "official-portals"
+    ],
+    "featuredMarketSlugs": [
+      "us",
+      "uk"
+    ]
+  }
+]

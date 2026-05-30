@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ad-home-hero-zh",
+    "placementKey": "home_hero_banner",
+    "locale": "zh-CN",
+    "targetType": "home",
+    "targetSlug": null,
+    "title": "赞助位预留",
+    "description": "一期只预留广告能力，不接入影响性能的第三方广告脚本。",
+    "ctaText": "查看方案",
+    "targetUrl": "/zh-CN/submit",
+    "sponsorName": "Silkroads Trade",
+    "disclosureLabel": "赞助位",
+    "status": "reserved"
+  },
+  {
+    "id": "ad-home-hero-en",
+    "placementKey": "home_hero_banner",
+    "locale": "en",
+    "targetType": "home",
+    "targetSlug": null,
+    "title": "Sponsor slot reserved",
+    "description": "Phase 1 reserves ad placements without loading heavy third-party scripts.",
+    "ctaText": "Learn more",
+    "targetUrl": "/en/submit",
+    "sponsorName": "Silkroads Trade",
+    "disclosureLabel": "Sponsored",
+    "status": "reserved"
+  }
+]

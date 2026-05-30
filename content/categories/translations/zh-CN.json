@@ -1,0 +1,98 @@
+{
+  "popular-platforms": {
+    "locale": "zh-CN",
+    "name": "热门平台",
+    "shortDescription": "围绕热门平台整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "热门平台工具导航 | Silkroads Trade",
+    "seoDescription": "围绕热门平台整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "热门平台 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  },
+  "core-tools": {
+    "locale": "zh-CN",
+    "name": "常用工具",
+    "shortDescription": "围绕常用工具整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "常用工具工具导航 | Silkroads Trade",
+    "seoDescription": "围绕常用工具整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "常用工具 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  },
+  "platform-directory": {
+    "locale": "zh-CN",
+    "name": "平台大全",
+    "shortDescription": "围绕平台大全整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "平台大全工具导航 | Silkroads Trade",
+    "seoDescription": "围绕平台大全整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "平台大全 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  },
+  "forums-news": {
+    "locale": "zh-CN",
+    "name": "论坛资讯",
+    "shortDescription": "围绕论坛资讯整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "论坛资讯工具导航 | Silkroads Trade",
+    "seoDescription": "围绕论坛资讯整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "论坛资讯 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  },
+  "cross-border-services": {
+    "locale": "zh-CN",
+    "name": "跨境服务",
+    "shortDescription": "围绕跨境服务整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "跨境服务工具导航 | Silkroads Trade",
+    "seoDescription": "围绕跨境服务整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "跨境服务 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  },
+  "training-courses": {
+    "locale": "zh-CN",
+    "name": "培训教程",
+    "shortDescription": "围绕培训教程整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "培训教程工具导航 | Silkroads Trade",
+    "seoDescription": "围绕培训教程整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "培训教程 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  },
+  "local-sourcing": {
+    "locale": "zh-CN",
+    "name": "本土货源",
+    "shortDescription": "围绕本土货源整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "本土货源工具导航 | Silkroads Trade",
+    "seoDescription": "围绕本土货源整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "本土货源 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  },
+  "ai-toolbox": {
+    "locale": "zh-CN",
+    "name": "AI工具箱",
+    "shortDescription": "围绕AI工具箱整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "AI工具箱工具导航 | Silkroads Trade",
+    "seoDescription": "围绕AI工具箱整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "AI工具箱 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  },
+  "independent-sites": {
+    "locale": "zh-CN",
+    "name": "独立站",
+    "shortDescription": "围绕独立站整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "独立站工具导航 | Silkroads Trade",
+    "seoDescription": "围绕独立站整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "独立站 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  },
+  "official-portals": {
+    "locale": "zh-CN",
+    "name": "官方专区",
+    "shortDescription": "围绕官方专区整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "官方专区工具导航 | Silkroads Trade",
+    "seoDescription": "围绕官方专区整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "官方专区 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  },
+  "recommended-plugins": {
+    "locale": "zh-CN",
+    "name": "推荐插件",
+    "shortDescription": "围绕推荐插件整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "推荐插件工具导航 | Silkroads Trade",
+    "seoDescription": "围绕推荐插件整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "推荐插件 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  },
+  "local-market-news": {
+    "locale": "zh-CN",
+    "name": "本土新闻资讯",
+    "shortDescription": "围绕本土新闻资讯整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。",
+    "seoTitle": "本土新闻资讯工具导航 | Silkroads Trade",
+    "seoDescription": "围绕本土新闻资讯整理的出海资源入口，帮助中国团队更快筛选可用平台、工具和服务商。 查看核心工具、服务商与平台入口。",
+    "intro": "本土新闻资讯 是 Silkroads Trade 的重点内容分组之一，用来帮助中国出海团队更快做出工具和服务选择。"
+  }
+}

@@ -34,3 +34,4 @@ yarn-error.log*
 
 .contentlayer
 .env
+public/generated/search/*.json

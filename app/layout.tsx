@@ -1,71 +1,29 @@
 import "@/styles/globals.css"
-import { Metadata } from "next"
 
-import { siteConfig } from "@/config/site"
-import { fontSans } from "@/lib/fonts"
-import { cn } from "@/lib/utils"
-import { ThemeProvider } from "@/components/theme-provider"
+import type { Metadata } from "next"
 
-const GA_TRACKING_ID	= 'G-0K1F6FL6L0' // Google Analytics ID 
+import { buildMetadata } from "@/lib/seo/metadata"
 
-export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`
-  },
-  description: siteConfig.description,
-
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png"
-  }
-}
+export const metadata: Metadata = buildMetadata({
+  locale: "zh-CN",
+  pathname: ""
+})
 
 export const viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" }
-  ],
-  
+    { media: "(prefers-color-scheme: light)", color: "#f5f3ec" },
+    { media: "(prefers-color-scheme: dark)", color: "#16130f" }
+  ]
 }
 
-interface RootLayoutProps {
+export default function RootLayout({
+  children
+}: Readonly<{
   children: React.ReactNode
-}
-
-import { usePathname, useSearchParams } from 'next/navigation'
-import { useEffect } from 'react'
-
-export default function RootLayout({ children }: RootLayoutProps) {
-
-
+}>) {
   return (
-    <>
-      <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${GA_TRACKING_ID}');
-            `,
-          }}
-        />
-      </head>
-        <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            {children}
-          </ThemeProvider>
-        </body>
-      </html>
-    </>
+    <html lang="zh-CN" suppressHydrationWarning>
+      <body className="min-h-screen bg-background font-sans text-foreground antialiased">{children}</body>
+    </html>
   )
 }

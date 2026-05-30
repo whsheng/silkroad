@@ -1,0 +1,37 @@
+{
+  "us": {
+    "name": "United States",
+    "shortDescription": "A mature market for China-based sellers across Amazon, independent sites, payment, and logistics workflows.",
+    "seoTitle": "United States Market Tools | Silkroads Trade",
+    "seoDescription": "Explore platforms, logistics, payment, and growth tools relevant to the US market.",
+    "intro": "The US remains a priority market for China-based export teams and requires strong tooling across fulfillment and growth."
+  },
+  "eu": {
+    "name": "Europe",
+    "shortDescription": "Focused on compliance, VAT, local fulfillment, and multi-country marketplace operations.",
+    "seoTitle": "Europe Market Tools | Silkroads Trade",
+    "seoDescription": "Find tools and service partners for European market entry, compliance, and operations.",
+    "intro": "Europe requires strong localization and compliance capabilities across multiple countries."
+  },
+  "uk": {
+    "name": "United Kingdom",
+    "shortDescription": "A focused market for platform operations, logistics, tax, and localized commerce workflows.",
+    "seoTitle": "United Kingdom Market Tools | Silkroads Trade",
+    "seoDescription": "Tooling and service partners for sellers operating in the UK market.",
+    "intro": "The UK is useful to evaluate as a standalone market with distinct logistics and tax workflows."
+  },
+  "sea": {
+    "name": "Southeast Asia",
+    "shortDescription": "Fast-moving market suited for TikTok Shop, local marketplaces, and lean fulfillment strategies.",
+    "seoTitle": "Southeast Asia Market Tools | Silkroads Trade",
+    "seoDescription": "Explore tools for Southeast Asia market operations across content commerce and logistics.",
+    "intro": "Southeast Asia rewards fast execution across content commerce, local marketplaces, and fulfillment."
+  },
+  "middle-east": {
+    "name": "Middle East",
+    "shortDescription": "Relevant for regional channels, payment options, and localized fulfillment strategies.",
+    "seoTitle": "Middle East Market Tools | Silkroads Trade",
+    "seoDescription": "Explore service partners and tooling for Middle East market expansion.",
+    "intro": "The Middle East can reward differentiated growth with strong payment and regional fulfillment support."
+  }
+}

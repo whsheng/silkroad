@@ -1,0 +1,70 @@
+[
+  {
+    "id": "market-us",
+    "slug": "us",
+    "sortOrder": 1,
+    "featuredCategorySlugs": [
+      "popular-platforms",
+      "cross-border-services",
+      "independent-sites"
+    ],
+    "featuredPlatformSlugs": [
+      "amazon",
+      "independent-site"
+    ]
+  },
+  {
+    "id": "market-eu",
+    "slug": "eu",
+    "sortOrder": 2,
+    "featuredCategorySlugs": [
+      "popular-platforms",
+      "cross-border-services",
+      "official-portals"
+    ],
+    "featuredPlatformSlugs": [
+      "amazon",
+      "shopify"
+    ]
+  },
+  {
+    "id": "market-uk",
+    "slug": "uk",
+    "sortOrder": 3,
+    "featuredCategorySlugs": [
+      "popular-platforms",
+      "official-portals"
+    ],
+    "featuredPlatformSlugs": [
+      "amazon",
+      "walmart"
+    ]
+  },
+  {
+    "id": "market-sea",
+    "slug": "sea",
+    "sortOrder": 4,
+    "featuredCategorySlugs": [
+      "popular-platforms",
+      "local-sourcing",
+      "independent-sites"
+    ],
+    "featuredPlatformSlugs": [
+      "tiktok-shop",
+      "shopify"
+    ]
+  },
+  {
+    "id": "market-middle-east",
+    "slug": "middle-east",
+    "sortOrder": 5,
+    "featuredCategorySlugs": [
+      "platform-directory",
+      "cross-border-services"
+    ],
+    "featuredPlatformSlugs": [
+      "independent-site",
+      "shopify"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "key": "home_hero_banner",
+    "name": "首页头图赞助位",
+    "description": "首页首屏赞助信息预留位",
+    "maxItems": 1
+  },
+  {
+    "key": "category_top_banner",
+    "name": "分类页顶部赞助位",
+    "description": "分类页顶部赞助内容预留位",
+    "maxItems": 1
+  }
+]

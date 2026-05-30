@@ -1,0 +1,90 @@
+[
+  {
+    "id": "guide-cross-border-stack",
+    "slug": "cross-border-stack",
+    "sortOrder": 1,
+    "featuredCategorySlugs": [
+      "popular-platforms",
+      "core-tools",
+      "cross-border-services"
+    ],
+    "featuredMarketSlugs": [
+      "us",
+      "eu"
+    ],
+    "featuredPlatformSlugs": [
+      "amazon",
+      "independent-site"
+    ],
+    "publishedAt": "2026-05-29",
+    "updatedAt": "2026-05-29",
+    "translations": {
+      "zh-CN": {
+        "title": "中国出海团队的一期工具栈怎么搭",
+        "summary": "围绕平台、物流、支付、内容与 AI 工具，梳理最适合中国团队的最小可行工具栈。",
+        "content": [
+          "一期内容不追求工具数量极多，而追求用户进入后能尽快完成选择。",
+          "你可以先围绕平台、支付、履约、建站、内容与 AI 这几条主线搭建站点导航结构。",
+          "SEO 页面应优先服务分类页、市场页和平台页，再逐步扩展专题内容。"
+        ],
+        "seoTitle": "中国出海团队一期工具栈搭建指南 | Silkroads Trade",
+        "seoDescription": "从平台、支付、履约、建站、内容与 AI 工具出发，梳理适合中国出海团队的一期工具栈。"
+      },
+      "en": {
+        "title": "Building the first practical tool stack for China-based global teams",
+        "summary": "A practical guide for structuring platforms, logistics, payment, content, and AI tooling.",
+        "content": [
+          "Phase 1 should optimize for clarity and decision speed instead of publishing every possible tool.",
+          "Start with platforms, payment, fulfillment, site building, content, and AI as the main navigation pillars.",
+          "SEO should focus on category, market, and platform pages before scaling more guide content."
+        ],
+        "seoTitle": "Phase 1 Tool Stack Guide | Silkroads Trade",
+        "seoDescription": "A practical content and tooling guide for China-based teams building cross-border operations."
+      }
+    }
+  },
+  {
+    "id": "guide-independent-site-launch",
+    "slug": "independent-site-launch",
+    "sortOrder": 2,
+    "featuredCategorySlugs": [
+      "independent-sites",
+      "recommended-plugins",
+      "ai-toolbox"
+    ],
+    "featuredMarketSlugs": [
+      "us",
+      "sea"
+    ],
+    "featuredPlatformSlugs": [
+      "shopify",
+      "independent-site"
+    ],
+    "publishedAt": "2026-05-29",
+    "updatedAt": "2026-05-29",
+    "translations": {
+      "zh-CN": {
+        "title": "独立站冷启动最需要先补的工具能力",
+        "summary": "从建站、支付、SEO、素材到数据监测，梳理独立站冷启动最常见的工具组合。",
+        "content": [
+          "独立站冷启动阶段，最重要的是建站效率、支付稳定性和内容生产速度。",
+          "分类页可以围绕建站、插件、SEO、支付和 AI 内容工具做强关联。",
+          "避免一开始接入过多第三方脚本，先把速度和索引打稳。"
+        ],
+        "seoTitle": "独立站冷启动工具指南 | Silkroads Trade",
+        "seoDescription": "聚焦独立站冷启动所需的建站、支付、SEO、内容和数据工具能力。"
+      },
+      "en": {
+        "title": "The first tool capabilities an independent site launch needs",
+        "summary": "A launch-oriented view across storefront setup, payment, SEO, creative, and analytics tooling.",
+        "content": [
+          "Independent site launches depend on execution speed, payment reliability, and creative output.",
+          "Category pages should strongly connect storefront, plugins, SEO, payment, and AI content tools.",
+          "Avoid too many third-party scripts at launch and protect site speed first."
+        ],
+        "seoTitle": "Independent Site Launch Tool Guide | Silkroads Trade",
+        "seoDescription": "Tooling priorities for launching an independent site with SEO, payment, and creative support."
+      }
+    }
+  }
+]
