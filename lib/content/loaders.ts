@@ -141,7 +141,8 @@ export function getGuideBySlug(locale: Locale, slug: string) {
 
 export function getAds(locale: Locale, targetType: AdItemRecord["targetType"], targetSlug: string | null = null) {
   return getContentData().adItems.filter(
-    (item) => item.locale === locale && item.targetType === targetType && item.targetSlug === targetSlug
+    (item) =>
+      item.status === "active" && item.locale === locale && item.targetType === targetType && item.targetSlug === targetSlug
   )
 }
 

@@ -106,7 +106,11 @@ function HomeContent({ locale }: { locale: Locale }) {
       <section className="space-y-6">
         <SectionHeading
           title={dictionary.home.featuredCategories}
-          description={locale === "zh-CN" ? "从核心分类快速切入，优先建设最有 SEO 价值的分类入口。" : "Start with the strongest category entry points for search visibility and decision speed."}
+          description={
+            locale === "zh-CN"
+              ? "围绕选品、建站、物流、支付、合规与增长等关键环节，帮助团队快速进入对应资源版块。"
+              : "Structured around sourcing, storefronts, logistics, payments, compliance, and growth so teams can reach the right resources faster."
+          }
         />
         <div className="grid gap-5 lg:grid-cols-3">
           {categories.slice(0, 6).map((category) => (
@@ -128,7 +132,14 @@ function HomeContent({ locale }: { locale: Locale }) {
 
       <section className="grid gap-8 lg:grid-cols-2">
         <div className="space-y-6">
-          <SectionHeading title={dictionary.home.featuredMarkets} description={locale === "zh-CN" ? "市场页用于承接地域相关搜索，帮助用户按区域理解工具与服务差异。" : "Market pages capture geography-led search intent and explain regional workflow differences."} />
+          <SectionHeading
+            title={dictionary.home.featuredMarkets}
+            description={
+              locale === "zh-CN"
+                ? "聚焦重点出海市场，梳理不同区域在平台、物流、支付与合规上的关键差异。"
+                : "Focused market pages highlight the practical differences across platforms, logistics, payments, and compliance in each region."
+            }
+          />
           <div className="grid gap-4">
             {markets.map((market) => (
               <LinkTile
@@ -147,7 +158,14 @@ function HomeContent({ locale }: { locale: Locale }) {
           </div>
         </div>
         <div className="space-y-6">
-          <SectionHeading title={dictionary.home.featuredPlatforms} description={locale === "zh-CN" ? "平台页负责沉淀 Amazon、Shopify、TikTok Shop 和独立站这类高意图入口。" : "Platform pages consolidate high-intent journeys across Amazon, Shopify, TikTok Shop, and owned channels."} />
+          <SectionHeading
+            title={dictionary.home.featuredPlatforms}
+            description={
+              locale === "zh-CN"
+                ? "覆盖 Amazon、Shopify、TikTok Shop 与独立站等核心渠道，方便按平台场景筛选工具与服务商。"
+                : "Covering Amazon, Shopify, TikTok Shop, and owned channels so teams can evaluate tools and service partners by platform context."
+            }
+          />
           <div className="grid gap-4">
             {platforms.map((platform) => (
               <LinkTile
@@ -162,7 +180,14 @@ function HomeContent({ locale }: { locale: Locale }) {
       </section>
 
       <section className="space-y-6">
-        <SectionHeading title={dictionary.home.featuredGuides} description={locale === "zh-CN" ? "专题页负责承接更长尾的内容搜索需求，也是后续 SEO 增长的核心资产。" : "Guides handle longer-tail intent and become a core SEO growth asset over time."} />
+        <SectionHeading
+          title={dictionary.home.featuredGuides}
+          description={
+            locale === "zh-CN"
+              ? "精选专题帮助团队快速理解重点市场、平台打法与常见运营问题。"
+              : "Editorial guides help teams quickly understand key markets, platform playbooks, and common operational questions."
+          }
+        />
         <div className="grid gap-5 lg:grid-cols-2">
           {guides.map((guide) => (
             <LinkTile
@@ -192,29 +217,29 @@ function HomeContent({ locale }: { locale: Locale }) {
       <section className="grid gap-5 rounded-[2rem] border border-border/70 bg-white/85 p-8 dark:bg-card/65 md:grid-cols-3">
         <div className="space-y-3">
           <Layers className="h-5 w-5 text-amber-700" />
-          <h3 className="text-lg font-semibold text-foreground">{locale === "zh-CN" ? "分类页优先" : "Category-first information architecture"}</h3>
+          <h3 className="text-lg font-semibold text-foreground">{locale === "zh-CN" ? "清晰分类" : "Clear structure"}</h3>
           <p className="text-sm leading-7 text-muted-foreground">
             {locale === "zh-CN"
-              ? "避免继续堆单个超长首页，把 SEO 权重和内容组织拆到分类、市场、平台和专题页。"
-              : "Avoid a single endless homepage and distribute search value across categories, markets, platforms, and guides."}
+              ? "通过分类、市场、平台与专题的组合导航，帮助团队更快缩小选择范围。"
+              : "Categories, markets, platforms, and guides work together to narrow choices faster for each workflow."}
           </p>
         </div>
         <div className="space-y-3">
           <Rocket className="h-5 w-5 text-amber-700" />
-          <h3 className="text-lg font-semibold text-foreground">{locale === "zh-CN" ? "静态化部署" : "Static-first publishing"}</h3>
+          <h3 className="text-lg font-semibold text-foreground">{locale === "zh-CN" ? "稳定访问" : "Reliable access"}</h3>
           <p className="text-sm leading-7 text-muted-foreground">
             {locale === "zh-CN"
-              ? "内容由 Git 驱动，构建期生成静态页面，适合 Vercel 免费环境和长期性能稳定。"
-              : "Content is Git-driven and turned into static pages during build, which keeps the free Vercel deployment lean and reliable."}
+              ? "页面加载轻量、访问直接，适合高频查询和长期使用场景。"
+              : "Fast page delivery and lightweight rendering make the site reliable for frequent lookup and repeated use."}
           </p>
         </div>
         <div className="space-y-3">
           <Star className="h-5 w-5 text-amber-700" />
-          <h3 className="text-lg font-semibold text-foreground">{locale === "zh-CN" ? "可持续扩展" : "Built for expansion"}</h3>
+          <h3 className="text-lg font-semibold text-foreground">{locale === "zh-CN" ? "持续更新" : "Continuously updated"}</h3>
           <p className="text-sm leading-7 text-muted-foreground">
             {locale === "zh-CN"
-              ? "二期再接投稿审核、广告位和运营后台，一期先把结构、SEO 和加载速度打牢。"
-              : "Phase 2 can add submissions, review, and sponsor operations once the content model and SEO foundation are solid."}
+              ? "站点内容会持续补充与校正，保持对出海团队更有参考价值。"
+              : "Content is continuously expanded and refined to stay useful for China-based global growth teams."}
           </p>
         </div>
       </section>

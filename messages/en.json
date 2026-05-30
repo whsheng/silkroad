@@ -28,7 +28,7 @@
     }
   },
   "home": {
-    "eyebrow": "Static publishing + scenario-driven decisions",
+    "eyebrow": "Navigation and operating references for global growth teams",
     "title": "Help China-based teams choose the right platforms, tools, and service partners faster",
     "description": "Built around cross-border commerce, independent sites, logistics, payment, compliance, and AI tooling with search-friendly and scalable content.",
     "primaryCta": "Browse categories",
@@ -39,10 +39,10 @@
     "featuredPlatforms": "Priority platforms",
     "featuredGuides": "Operational guides",
     "submissionTitle": "User submissions are now open",
-    "submissionDescription": "The minimal workflow creates a GitHub Issue first, then editors review and publish approved entries.",
+    "submissionDescription": "Submit valuable tools, sites, or service providers for review and possible inclusion in the directory.",
     "submissionCta": "Submit a site",
-    "sponsorTitle": "Sponsor slot reserved",
-    "sponsorDescription": "Phase 1 reserves sponsor placements without adding heavy third-party ad scripts."
+    "sponsorTitle": "Partnership opportunities",
+    "sponsorDescription": "Qualified service providers can explore promotional placements through the submission channel."
   },
   "category": {
     "toolCount": "Tool count",
@@ -65,8 +65,8 @@
   },
   "submit": {
     "title": "Submit a new site",
-    "description": "After submission, the site creates a GitHub Issue for editorial review, classification, and publishing.",
-    "processTitle": "Planned submission process",
+    "description": "After submission, the editorial team reviews the entry, refines its classification, and publishes suitable listings.",
+    "processTitle": "Submission process",
     "process": [
       "Submit a site with contact details",
       "Run duplicate checks and basic validation",
@@ -74,7 +74,7 @@
       "Merge the content change and publish automatically"
     ],
     "requiredHint": "Fields marked with * are required. Make sure the site is reachable and relevant to global trade workflows.",
-    "reviewNotice": "This is still a human review workflow. We check duplicates, validate fit, and then prepare approved content for publishing.",
+    "reviewNotice": "Submissions are reviewed manually to confirm relevance, avoid duplicates, and maintain listing quality.",
     "submitButton": "Submit site",
     "submitting": "Submitting...",
     "fields": {
@@ -114,7 +114,7 @@
       "errorTitle": "Submission failed",
       "errorDescription": "The site could not create a GitHub Issue right now. Please try again later.",
       "validationError": "The submission did not pass basic validation. Please review the URL, description, and contact details.",
-      "configError": "The submission service is not fully configured yet. The deployment environment still needs GitHub env vars.",
+      "configError": "The submission service is temporarily unavailable. Please try again later.",
       "spamError": "The submission did not pass the anti-spam check. Refresh and try again."
     }
   },

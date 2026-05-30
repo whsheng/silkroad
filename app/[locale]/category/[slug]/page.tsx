@@ -163,8 +163,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             </h3>
             <p className="mt-3 text-sm leading-7 text-muted-foreground">
               {locale === "zh-CN"
-                ? "一期先完成结构化入口与静态收录，后续会继续补充价格、适用人群和风险提示。"
-                : "Phase 1 focuses on structured entry pages. Later updates can add pricing, fit, and risk notes."}
+                ? "我们会持续补充价格、适用场景、服务特点与使用提示，帮助你更快完成判断。"
+                : "We continue to expand pricing notes, fit, service traits, and usage guidance to support faster decisions."}
             </p>
           </div>
         </div>
