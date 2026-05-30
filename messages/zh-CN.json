@@ -33,6 +33,28 @@
     "description": "围绕跨境电商、独立站、平台入驻、物流、支付、合规与 AI 工具，提供可索引、可筛选、可持续运营的内容入口。",
     "primaryCta": "浏览核心分类",
     "secondaryCta": "查看精选专题",
+    "audienceTitle": "这个站适合谁",
+    "audienceDescription": "适合中国跨境卖家、独立站团队、外贸公司，以及正在评估平台、工具与服务商的出海业务团队。",
+    "entryTitle": "你可以从这 4 种方式进入",
+    "entryDescription": "按问题、市场、平台或方法进入，能更快找到适合自己的资源范围。",
+    "entryModes": {
+      "categories": {
+        "title": "按问题进入",
+        "description": "如果你已经知道自己在找物流、支付、建站、选品、AI 或合规资源，先从分类开始。 "
+      },
+      "markets": {
+        "title": "按市场进入",
+        "description": "如果你主要面向美国、欧洲、英国或东南亚市场，先看不同区域的关键差异。 "
+      },
+      "platforms": {
+        "title": "按平台进入",
+        "description": "如果你重点做 Amazon、Shopify、TikTok Shop 或独立站，可按平台场景筛选。 "
+      },
+      "guides": {
+        "title": "按方法进入",
+        "description": "如果你还在建立认知，先看专题指南，快速理解打法、流程与常见问题。 "
+      }
+    },
     "featuredCategories": "核心分类",
     "featuredTools": "精选工具",
     "featuredMarkets": "重点市场",

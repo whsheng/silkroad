@@ -1,6 +1,6 @@
 import Link from "next/link"
 import type { Metadata } from "next"
-import { ArrowRight, Globe2, Layers, Rocket, Star } from "lucide-react"
+import { ArrowRight, Compass, Globe2, Layers, Rocket, Star } from "lucide-react"
 import { notFound } from "next/navigation"
 
 import { AdBanner } from "@/components/public/ad-banner"
@@ -102,6 +102,49 @@ function HomeContent({ locale }: { locale: Locale }) {
       </section>
 
       {ads[0] ? <AdBanner locale={locale} item={ads[0]} /> : null}
+
+      <section className="grid gap-6 rounded-[2rem] border border-border/70 bg-white/85 p-8 shadow-[0_18px_60px_rgba(15,23,42,0.05)] dark:bg-card/65 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="space-y-5">
+          <SectionHeading
+            eyebrow={locale === "zh-CN" ? "使用说明" : "How to use"}
+            title={dictionary.home.audienceTitle}
+            description={dictionary.home.audienceDescription}
+          />
+          <div className="rounded-3xl border border-border/70 bg-background/60 p-5">
+            <div className="flex items-center gap-3">
+              <Compass className="h-5 w-5 text-amber-700" />
+              <h3 className="text-lg font-semibold text-foreground">{dictionary.home.entryTitle}</h3>
+            </div>
+            <p className="mt-3 text-sm leading-7 text-muted-foreground">{dictionary.home.entryDescription}</p>
+          </div>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2">
+          <LinkTile
+            title={dictionary.home.entryModes.categories.title}
+            description={dictionary.home.entryModes.categories.description}
+            href={`/${locale}/category/${categories[0]?.slug ?? ""}`}
+            meta={dictionary.common.categories}
+          />
+          <LinkTile
+            title={dictionary.home.entryModes.markets.title}
+            description={dictionary.home.entryModes.markets.description}
+            href={`/${locale}/market/${markets[0]?.slug ?? ""}`}
+            meta={dictionary.common.markets}
+          />
+          <LinkTile
+            title={dictionary.home.entryModes.platforms.title}
+            description={dictionary.home.entryModes.platforms.description}
+            href={`/${locale}/platform/${platforms[0]?.slug ?? ""}`}
+            meta={dictionary.common.platforms}
+          />
+          <LinkTile
+            title={dictionary.home.entryModes.guides.title}
+            description={dictionary.home.entryModes.guides.description}
+            href={guides[0] ? `/${locale}/guide/${guides[0].slug}` : `/${locale}/submit`}
+            meta={dictionary.common.guides}
+          />
+        </div>
+      </section>
 
       <section className="space-y-6">
         <SectionHeading

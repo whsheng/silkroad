@@ -33,6 +33,28 @@
     "description": "Built around cross-border commerce, independent sites, logistics, payment, compliance, and AI tooling with search-friendly and scalable content.",
     "primaryCta": "Browse categories",
     "secondaryCta": "Read guides",
+    "audienceTitle": "Who this site is for",
+    "audienceDescription": "Built for China-based sellers, independent site teams, trading companies, and operators evaluating platforms, tools, and service partners.",
+    "entryTitle": "You can start in 4 ways",
+    "entryDescription": "Enter by problem, market, platform, or method to narrow the right resource set faster.",
+    "entryModes": {
+      "categories": {
+        "title": "Start by problem",
+        "description": "If you already know you need logistics, payment, storefront, sourcing, AI, or compliance resources, begin with categories."
+      },
+      "markets": {
+        "title": "Start by market",
+        "description": "If you focus on the US, Europe, the UK, or Southeast Asia, compare the operational differences by region first."
+      },
+      "platforms": {
+        "title": "Start by platform",
+        "description": "If your work is centered on Amazon, Shopify, TikTok Shop, or owned channels, browse by platform context."
+      },
+      "guides": {
+        "title": "Start by method",
+        "description": "If you are still building your understanding, start with editorial guides to learn playbooks and common questions."
+      }
+    },
     "featuredCategories": "Core categories",
     "featuredTools": "Featured tools",
     "featuredMarkets": "Priority markets",
