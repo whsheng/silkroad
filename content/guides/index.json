@@ -1,89 +1,329 @@
 [
   {
-    "id": "guide-cross-border-stack",
-    "slug": "cross-border-stack",
+    "id": "guide-amazon-first-90-days",
+    "slug": "amazon-first-90-days",
     "sortOrder": 1,
-    "featuredCategorySlugs": [
-      "popular-platforms",
-      "core-tools",
-      "cross-border-services"
-    ],
-    "featuredMarketSlugs": [
-      "us",
-      "eu"
-    ],
-    "featuredPlatformSlugs": [
-      "amazon",
-      "independent-site"
-    ],
-    "publishedAt": "2026-05-29",
-    "updatedAt": "2026-05-29",
+    "featuredCategorySlugs": ["popular-platforms", "core-tools", "official-portals"],
+    "featuredMarketSlugs": ["us", "eu", "uk"],
+    "featuredPlatformSlugs": ["amazon"],
+    "publishedAt": "2026-05-30",
+    "updatedAt": "2026-05-30",
     "translations": {
       "zh-CN": {
-        "title": "中国出海团队的一期工具栈怎么搭",
-        "summary": "围绕平台、物流、支付、内容与 AI 工具，梳理最适合中国团队的最小可行工具栈。",
+        "title": "亚马逊新卖家前 90 天：先把这 7 件事跑通，再谈放量",
+        "summary": "从利润模型、Listing、广告、库存到账号安全，梳理亚马逊新卖家前 90 天最容易忽略的关键动作。",
         "content": [
-          "一期内容不追求工具数量极多，而追求用户进入后能尽快完成选择。",
-          "你可以先围绕平台、支付、履约、建站、内容与 AI 这几条主线搭建站点导航结构。",
-          "SEO 页面应优先服务分类页、市场页和平台页，再逐步扩展专题内容。"
+          "很多亚马逊新卖家一开始最容易犯的错，不是不会投广告，而是在利润模型和运营节奏都没稳定之前就急着放量。前 90 天的目标不是把单量冲到最高，而是确认你的产品能不能稳定卖、广告能不能收敛、供应链能不能跟得上。",
+          "第一步先把利润模型算透。你至少要明确到手价、平台佣金、FBA 费用、头程、退货损耗、广告占比和汇率波动后，自己每单真正还能剩多少。很多看起来销量不错的链接，最后死在补货和现金流，就是因为前期只看销售额，没有把履约和退货成本算进去。",
+          "Listing 不要一开始就追求极致，而要先把转化的底盘搭稳。标题、主图、五点、A+ 和评论节奏里，优先级最高的是让用户在 3 秒内知道你卖什么、有什么核心差异、为什么值得信任。新卖家不要在早期堆太多卖点，而要围绕 1 到 2 个最强卖点反复验证。",
+          "广告在前 30 天更像调研工具，而不是纯放量工具。你需要尽快知道哪些词带来点击、哪些词带来转化、哪些词只烧钱不出单。真正高质量的数据，不是曝光量，而是能帮你判断哪些搜索词值得继续投、哪些词应该立刻否掉。",
+          "库存和补货是新卖家最容易低估的风险点。断货会让你前面积累的自然排名和广告学习阶段一起中断，压太多库存又会把现金流锁死。更现实的做法是用保守补货策略先跑出真实周销，再按照供货周期、清关时效和入仓波动去计算安全库存。",
+          "账号安全和运营权限要尽早规范。不要把邮箱、收款、广告和申诉权限全绑在一个人身上，也不要在不干净的网络环境下频繁切账号。对新团队来说，权限隔离、日志留痕和基础 SOP，比所谓的“运营技巧”更能决定你能不能长期做下去。",
+          "如果前 90 天能把利润、转化、广告、库存和账号安全都跑顺，再谈加预算、扩站点和扩 SKU 才有意义。先稳定一条能复制的出单链路，比在不稳定状态下盲目冲量更重要。"
         ],
-        "seoTitle": "中国出海团队一期工具栈搭建指南 | Silkroads Trade",
-        "seoDescription": "从平台、支付、履约、建站、内容与 AI 工具出发，梳理适合中国出海团队的一期工具栈。"
+        "seoTitle": "亚马逊新卖家前 90 天怎么做 | Silkroads Trade",
+        "seoDescription": "围绕利润模型、Listing、广告、库存和账号安全，梳理亚马逊新卖家前 90 天最关键的运营动作。"
       },
       "en": {
-        "title": "Building the first practical tool stack for China-based global teams",
-        "summary": "A practical guide for structuring platforms, logistics, payment, content, and AI tooling.",
+        "title": "Amazon launch in the first 90 days: 7 things to stabilize before scaling",
+        "summary": "A practical playbook for new Amazon sellers across margin control, listings, ads, inventory, and account safety.",
         "content": [
-          "Phase 1 should optimize for clarity and decision speed instead of publishing every possible tool.",
-          "Start with platforms, payment, fulfillment, site building, content, and AI as the main navigation pillars.",
-          "SEO should focus on category, market, and platform pages before scaling more guide content."
+          "New Amazon sellers rarely fail because they cannot launch ads. They usually fail because margins, inventory, and operating rhythm are still unstable when they try to scale. The first 90 days should be used to prove that the product can sell repeatedly and profitably.",
+          "Start with the real margin model. You need a clear view of selling price, platform fees, FBA cost, freight, refund loss, ad spend ratio, and FX movement. Revenue alone is a misleading signal if fulfilment and returns are eating the contribution margin.",
+          "Do not over-design the listing in the first phase. Focus on a clear title, a sharp main image, a simple value proposition, and a few trust-building points. Early conversion usually improves more from clarity than from adding every possible selling point.",
+          "Treat advertising as a learning system in the first 30 days. The goal is to identify which search terms bring qualified traffic, which ones convert, and which ones only consume budget. Good early ad data narrows decisions faster than broad exposure.",
+          "Inventory discipline matters more than many new sellers expect. Stockouts interrupt both ranking and ad learning, while overstock strains cash flow. A conservative replenishment plan based on real weekly velocity and lead-time variance is usually safer.",
+          "Account safety should be handled like operations infrastructure. Separate key permissions, keep clean access patterns, and avoid messy login behavior across devices and networks. Stable access and clear ownership reduce avoidable account risk.",
+          "Once margin, conversion, ads, inventory, and account controls are stable, then scaling budget and SKU count becomes a rational move. A repeatable operating loop is more valuable than a noisy early sales spike."
         ],
-        "seoTitle": "Phase 1 Tool Stack Guide | Silkroads Trade",
-        "seoDescription": "A practical content and tooling guide for China-based teams building cross-border operations."
+        "seoTitle": "What New Amazon Sellers Should Stabilize in the First 90 Days | Silkroads Trade",
+        "seoDescription": "A practical 90-day Amazon launch guide covering margin control, listings, ads, inventory, and account safety."
       }
     }
   },
   {
-    "id": "guide-independent-site-launch",
-    "slug": "independent-site-launch",
+    "id": "guide-independent-site-cold-start",
+    "slug": "independent-site-cold-start",
     "sortOrder": 2,
-    "featuredCategorySlugs": [
-      "independent-sites",
-      "recommended-plugins",
-      "ai-toolbox"
-    ],
-    "featuredMarketSlugs": [
-      "us",
-      "sea"
-    ],
-    "featuredPlatformSlugs": [
-      "shopify",
-      "independent-site"
-    ],
-    "publishedAt": "2026-05-29",
-    "updatedAt": "2026-05-29",
+    "featuredCategorySlugs": ["independent-sites", "recommended-plugins", "ai-toolbox"],
+    "featuredMarketSlugs": ["us", "eu", "sea"],
+    "featuredPlatformSlugs": ["shopify", "independent-site"],
+    "publishedAt": "2026-05-30",
+    "updatedAt": "2026-05-30",
     "translations": {
       "zh-CN": {
-        "title": "独立站冷启动最需要先补的工具能力",
-        "summary": "从建站、支付、SEO、素材到数据监测，梳理独立站冷启动最常见的工具组合。",
+        "title": "独立站冷启动：预算有限时，先把流量、转化和复购拆开做",
+        "summary": "独立站起步最怕一上来把钱全花在投流上，这篇文章讲清楚预算有限时应该先补哪些基本功。",
         "content": [
-          "独立站冷启动阶段，最重要的是建站效率、支付稳定性和内容生产速度。",
-          "分类页可以围绕建站、插件、SEO、支付和 AI 内容工具做强关联。",
-          "避免一开始接入过多第三方脚本，先把速度和索引打稳。"
+          "独立站冷启动最常见的问题，不是页面做得不够漂亮，而是把所有希望都压在买量上。真正有效的起步方式，是把流量、转化和复购拆成三条线分别优化，而不是一股脑追求“今天就出单”。",
+          "在投放之前，先把站点的基础成交链路补齐。首页、商品页、支付流程、运费说明、退换政策和客服入口都必须足够清晰。很多广告效果差，不是流量不行，而是用户点进来之后看不懂、信不过、下单成本太高。",
+          "冷启动期的流量来源不要只押一个渠道。搜索、内容、达人分发和小额广告测试应该同时存在，但预算分配要有主次。最怕的是一开始就重仓投广告，却没有内容素材、落地页测试和数据复盘能力，最后只知道钱烧掉了。",
+          "转化优化要抓几个最直接的环节：首屏卖点是否明确、页面速度是否足够快、评价和信任背书是否可见、支付方式是否匹配目标市场、结账步骤是否过长。独立站的转化，很多时候不是靠多一个弹窗，而是靠少一个阻碍。",
+          "复购不要等到出单稳定后才开始想。邮箱订阅、欢迎流、加购提醒、售后回访和二次推荐，都应该在第一批订单到来前就搭起来。独立站最大的价值不是第一次成交，而是你终于拥有了自己的用户数据和二次触达能力。",
+          "预算有限时，最好的策略不是平均用力，而是先把一条最短成交路径跑顺。先找到一个能稳定拿到流量、完成成交、带来复购的产品或页面，再复制到其他品类，效率远高于一开始铺太多页面和 SKU。"
         ],
-        "seoTitle": "独立站冷启动工具指南 | Silkroads Trade",
-        "seoDescription": "聚焦独立站冷启动所需的建站、支付、SEO、内容和数据工具能力。"
+        "seoTitle": "独立站冷启动怎么做更稳 | Silkroads Trade",
+        "seoDescription": "围绕流量、转化和复购三条主线，梳理预算有限时独立站冷启动最关键的优先级。"
       },
       "en": {
-        "title": "The first tool capabilities an independent site launch needs",
-        "summary": "A launch-oriented view across storefront setup, payment, SEO, creative, and analytics tooling.",
+        "title": "Independent-site cold start: separate traffic, conversion, and retention before spending hard",
+        "summary": "A grounded launch framework for teams that need to start an independent site with limited budget and clear priorities.",
         "content": [
-          "Independent site launches depend on execution speed, payment reliability, and creative output.",
-          "Category pages should strongly connect storefront, plugins, SEO, payment, and AI content tools.",
-          "Avoid too many third-party scripts at launch and protect site speed first."
+          "Independent-site launches often fail because teams expect paid traffic to solve everything from day one. A healthier approach is to separate traffic, conversion, and retention into distinct workstreams instead of trying to optimize all outcomes through ad spend alone.",
+          "Before scaling traffic, stabilize the purchase path. Product pages, checkout flow, shipping explanation, return policy, and support access all need to be clear enough that visitors can trust the store quickly. Weak conversion frequently starts with weak trust, not weak traffic.",
+          "Do not rely on only one acquisition channel in the cold-start phase. Search intent, content distribution, creator traffic, and small-budget paid tests should coexist, but each must have a clear role. Paid traffic without landing-page learning usually becomes expensive noise.",
+          "Conversion improvements usually come from a few practical fixes: clear first-screen messaging, faster page speed, visible reviews or proof, market-matched payment methods, and fewer checkout obstacles. Small execution gaps often matter more than fancy design changes.",
+          "Retention should begin before the first stable sales cycle. Email capture, welcome flows, browse recovery, post-purchase follow-up, and product recommendation logic all become more useful when the first customers arrive. Owned audience is one of the strongest reasons to build an independent site.",
+          "With a limited budget, the smartest move is to make one shortest path to conversion work repeatedly. Once one product or one page can bring traffic, convert, and retain buyers, then expansion becomes much easier."
         ],
-        "seoTitle": "Independent Site Launch Tool Guide | Silkroads Trade",
-        "seoDescription": "Tooling priorities for launching an independent site with SEO, payment, and creative support."
+        "seoTitle": "How to Launch an Independent Site with Limited Budget | Silkroads Trade",
+        "seoDescription": "A practical framework for independent-site cold start across traffic, conversion, and retention."
+      }
+    }
+  },
+  {
+    "id": "guide-tiktok-shop-priority-order",
+    "slug": "tiktok-shop-priority-order",
+    "sortOrder": 3,
+    "featuredCategorySlugs": ["popular-platforms", "ai-toolbox", "training-courses"],
+    "featuredMarketSlugs": ["sea", "us"],
+    "featuredPlatformSlugs": ["tiktok-shop"],
+    "publishedAt": "2026-05-30",
+    "updatedAt": "2026-05-30",
+    "translations": {
+      "zh-CN": {
+        "title": "TikTok Shop 起盘别急着投流：内容、达人、履约的正确顺序",
+        "summary": "TikTok Shop 不是简单的广告生意，内容供给、达人协同和履约稳定性决定了你能不能持续起量。",
+        "content": [
+          "很多团队做 TikTok Shop，第一反应就是“先投流看看能不能出单”。但这个平台最核心的变量不是流量买不买得到，而是内容能不能持续产出、达人能不能合作顺畅、履约能不能撑住成交后的体验。",
+          "第一优先级是内容测试。你需要尽快找出什么样的开头能停留、什么角度能激发点击、什么表达能带来下单，而不是一开始就花很多钱去放大一条还没验证过的素材。没有内容测试能力，后面的投流效率通常都不稳定。",
+          "第二优先级是达人合作机制。不是达人越大越好，而是你有没有清晰的选人标准、样品策略、佣金规则、复投判断和素材复用能力。很多品牌与达人合作失效，不是预算不够，而是没有把合作流程产品化。",
+          "第三优先级是履约体验。TikTok Shop 的转化波动很大程度上会被物流时效、客服响应和退款体验放大。尤其在东南亚和美国市场，发货慢、包裹异常、客服延迟都会直接影响评分和后续流量表现。",
+          "投流应该放在内容和履约都稍微稳定之后。最适合投放的不是“今天最想卖的货”，而是已经证明内容点击率和自然成交还不错、且售后风险可控的商品。你放大的应该是一条有希望稳定复制的链路，而不是偶然爆掉的一条视频。",
+          "如果你想把 TikTok Shop 做成长期业务，核心不是追一次爆单，而是建立起一套能持续测试内容、筛达人、守住履约的运营系统。把顺序理对，成本会低很多，放量也会稳很多。"
+        ],
+        "seoTitle": "TikTok Shop 起盘优先级怎么排 | Silkroads Trade",
+        "seoDescription": "从内容测试、达人合作到履约体验，梳理 TikTok Shop 起盘阶段真正该优先做的事。"
+      },
+      "en": {
+        "title": "Do not rush traffic on TikTok Shop: get content, creators, and fulfilment in the right order",
+        "summary": "A practical order of operations for TikTok Shop teams that want more than one-off spikes.",
+        "content": [
+          "Many teams approach TikTok Shop as if media buying is the main lever. In reality, sustainable growth depends on content testing, creator workflows, and fulfilment reliability more than on ad spend alone.",
+          "Content testing should come first. You need to learn which hooks hold attention, which product angles earn clicks, and which messages move viewers to buy. Scaling traffic before learning the content pattern usually leads to unstable CAC.",
+          "Creator collaboration should come next. The real advantage is not getting the biggest creator. It is building a repeatable system for shortlist criteria, sample seeding, commission terms, content rights, and reactivation decisions.",
+          "Fulfilment is the third priority because poor post-purchase experience damages the whole loop. Slow shipping, weak support, and messy refunds quickly affect customer trust and platform performance, especially in SEA and the US.",
+          "Paid traffic works best after content and fulfilment are already reasonably stable. The right product to scale is one that has shown strong click-through and conversion signals organically, while also carrying manageable after-sales risk.",
+          "Long-term TikTok Shop success looks less like one viral win and more like a system that keeps testing creatives, managing creators, and protecting fulfilment quality."
+        ],
+        "seoTitle": "TikTok Shop Launch Priorities for Sustainable Growth | Silkroads Trade",
+        "seoDescription": "Learn the right operating order for TikTok Shop across content testing, creator collaboration, and fulfilment."
+      }
+    }
+  },
+  {
+    "id": "guide-us-market-entry-basics",
+    "slug": "us-market-entry-basics",
+    "sortOrder": 4,
+    "featuredCategorySlugs": ["cross-border-services", "official-portals", "independent-sites"],
+    "featuredMarketSlugs": ["us"],
+    "featuredPlatformSlugs": ["amazon", "independent-site"],
+    "publishedAt": "2026-05-30",
+    "updatedAt": "2026-05-30",
+    "translations": {
+      "zh-CN": {
+        "title": "做美国市场前，先补这 5 个底层环节：物流、支付、税务、客服、退货",
+        "summary": "美国市场看起来机会大，但真正影响转化和复购的，往往不是广告，而是底层履约和服务能力。",
+        "content": [
+          "很多团队一提美国市场，第一反应就是流量大、客单高、值得重投。但真正把美国市场做稳的团队，通常先把物流、支付、税务、客服和退货这 5 个环节理顺，而不是一开始就只盯着广告放量。",
+          "物流先看承诺，不要先看最低价。用户最在意的是你承诺的时效能不能兑现、异常包裹能不能及时处理、旺季是否会失控。美国市场的配送体验，直接决定差评、退款率和二次购买意愿。",
+          "支付环节不能只看能不能收款，还要看拒付、风控和消费者信任。支付方式、账单描述、结账体验和异常订单处理流程，都会影响最终成交。独立站尤其要注意不同支付方式带来的通过率和风险差异。",
+          "税务问题别等有规模后再补。你未必一开始就要搭最复杂的结构，但至少要知道销售税、州别要求、报税节奏和平台责任边界。很多团队不是不会卖，而是在后续合规补课时损失掉了太多时间和利润。",
+          "客服与退货是美国市场经常被低估的体验项。响应慢、表达不清、退货流程模糊，都会放大客诉压力。特别是当你卖的是高客单、易损耗或尺码敏感产品时，退货策略本身就是转化策略的一部分。",
+          "美国市场不是不能重投，而是越想做大，越要先把基础设施补稳。先把交付、收款、税务和售后跑顺，后面的流量投入才不会变成低质量增长。"
+        ],
+        "seoTitle": "进入美国市场前要先补哪些底层能力 | Silkroads Trade",
+        "seoDescription": "围绕物流、支付、税务、客服和退货，梳理中国团队进入美国市场前最该补齐的关键基础能力。"
+      },
+      "en": {
+        "title": "Before entering the US market, stabilize these 5 fundamentals first",
+        "summary": "Logistics, payments, tax basics, support, and returns often decide whether US-market growth is durable or fragile.",
+        "content": [
+          "The US market attracts teams with its traffic scale and price potential, but strong growth usually starts with operational discipline rather than aggressive media buying. The most important foundations are logistics, payments, tax basics, support, and returns.",
+          "On logistics, reliability matters more than the lowest quoted price. Delivery promise, exception handling, and peak-season stability all shape review quality, refund pressure, and repeat intent.",
+          "Payments should be judged on approval quality and operational trust, not only on whether they can settle funds. Checkout experience, chargeback handling, risk controls, and clear billing descriptors all affect conversion and post-purchase friction.",
+          "Tax work should not be delayed until the business becomes messy. You do not need maximum complexity at the beginning, but you do need a basic understanding of sales tax obligations, timing, and platform responsibility boundaries.",
+          "Customer support and returns are often underbuilt in cross-border launches. Slow response, unclear wording, and vague return rules quickly increase friction in the US market, especially for higher-ticket or size-sensitive products.",
+          "If you want the US market to become a stable business line, the groundwork must be strong enough that traffic growth does not expose operational weakness."
+        ],
+        "seoTitle": "US Market Entry Basics for Cross-Border Teams | Silkroads Trade",
+        "seoDescription": "A practical guide to the five operational fundamentals for entering the US market: logistics, payments, tax basics, support, and returns."
+      }
+    }
+  },
+  {
+    "id": "guide-eu-localization-conversion",
+    "slug": "eu-localization-conversion",
+    "sortOrder": 5,
+    "featuredCategorySlugs": ["official-portals", "cross-border-services", "independent-sites"],
+    "featuredMarketSlugs": ["eu", "uk"],
+    "featuredPlatformSlugs": ["amazon", "shopify"],
+    "publishedAt": "2026-05-30",
+    "updatedAt": "2026-05-30",
+    "translations": {
+      "zh-CN": {
+        "title": "欧洲站为什么转化低：不是广告不行，而是本地化还没做对",
+        "summary": "很多团队做欧洲市场时把问题都归结为投放效果差，实际上更常见的原因是语言、信任和交付细节没有本地化。",
+        "content": [
+          "欧洲市场的常见误判，是把转化低完全归因于流量质量不够。实际上，很多站点和链接的问题根本不在流量，而在页面表达、价格理解、配送承诺和信任信息没有真正按本地用户习惯去设计。",
+          "语言本地化不是简单翻译。标题、卖点、尺寸表达、材质说明、售后承诺和 FAQ，都要像本地用户会说的话，而不是中文思路直译过去。尤其在德国、法国、西班牙和意大利市场，语言自然度会直接影响信任和购买意愿。",
+          "支付与价格展示也影响转化。税费是否说清、是否包含运费、是否支持本地常用支付方式、付款页面是否显得正规，这些都会左右最后一步是否下单。用户不是只在比价格，而是在比总成本和风险。",
+          "配送承诺必须更谨慎。欧洲用户对时效和包裹体验通常更敏感，如果你宣传速度很快，实际却经常延迟，会比一开始给出更保守但稳定的承诺伤害更大。转化和退货率往往都受这一点影响。",
+          "信任信息要放在更靠前的位置。包括公司信息、退货政策、客服方式、评分背书和本地化承诺。很多独立站不是没有流量，而是用户在页面里找不到足够让自己安心下单的理由。",
+          "如果欧洲市场的转化一直上不去，先别急着继续放大广告预算。先检查语言、价格、支付、配送和信任这几个本地化环节，通常会比单纯优化投放带来更直接的改善。"
+        ],
+        "seoTitle": "欧洲站转化低通常是哪些本地化问题 | Silkroads Trade",
+        "seoDescription": "围绕语言、支付、价格、配送和信任信息，分析欧洲市场转化偏低时最常见的本地化短板。"
+      },
+      "en": {
+        "title": "Why your Europe conversion is low: often the issue is localization, not ads",
+        "summary": "A practical guide to the language, trust, payment, and delivery details that often limit conversion in Europe.",
+        "content": [
+          "A common mistake in Europe-focused operations is assuming that weak conversion must come from weak traffic. In many cases, the bigger issue is that page copy, pricing logic, delivery promise, and trust cues were never localized properly for local buyers.",
+          "Localization is not literal translation. Titles, benefits, sizing, material language, return explanation, and FAQ all need to sound like native buying language rather than translated internal copy. Natural phrasing often affects trust more than teams expect.",
+          "Price presentation and payment support also shape conversion. Buyers care about the full cost and perceived risk: taxes, shipping clarity, payment method fit, and whether checkout looks trustworthy enough to complete.",
+          "Delivery promises should be made carefully. In many European markets, late delivery against an ambitious promise does more damage than a slightly slower but credible expectation set at the beginning.",
+          "Trust information needs to appear earlier and more clearly. Company identity, return policy, support access, social proof, and local-language reassurance often matter before the final purchase step.",
+          "If conversion remains low, do not rush to increase ad spend first. Audit language, price communication, payment logic, delivery promise, and trust content before scaling traffic harder."
+        ],
+        "seoTitle": "Europe Conversion Issues Often Start with Weak Localization | Silkroads Trade",
+        "seoDescription": "A practical Europe-market guide covering localization, trust, payment, pricing, and delivery factors that affect conversion."
+      }
+    }
+  },
+  {
+    "id": "guide-service-provider-selection",
+    "slug": "service-provider-selection",
+    "sortOrder": 6,
+    "featuredCategorySlugs": ["cross-border-services", "core-tools", "training-courses"],
+    "featuredMarketSlugs": ["us", "eu", "sea"],
+    "featuredPlatformSlugs": ["amazon", "shopify", "independent-site"],
+    "publishedAt": "2026-05-30",
+    "updatedAt": "2026-05-30",
+    "translations": {
+      "zh-CN": {
+        "title": "海外仓、ERP、代运营怎么选：出海团队筛服务商的 12 个问题",
+        "summary": "服务商选错，往往比工具选错更贵。这篇文章给你一套更实用的筛选提问框架。",
+        "content": [
+          "出海团队挑服务商，最怕的不是报价高，而是合作一个月后才发现对方能力边界、交付节奏和数据透明度完全不符合预期。无论你在看海外仓、ERP、代运营、广告代理还是客服外包，筛选时都要有一套统一的问题框架。",
+          "第一类问题是边界。你要问清楚对方到底负责什么、不负责什么，哪些是标准服务，哪些要额外收费，出现异常谁响应、谁决策、谁承担结果。很多合作后来失控，根源都是一开始把“默认包含”理解错了。",
+          "第二类问题是案例。不要只听“我们服务过很多大客户”，而要看与你体量、品类、市场更接近的案例，并进一步问清楚对方在那个案例里具体做了什么，而不是只拿客户品牌给你背书。",
+          "第三类问题是数据和权限。你能不能直接看到后台数据、广告账户、仓储数据和操作记录？合作结束后素材、数据、账户和 SOP 归谁？如果这些问题说不清，后面切换服务商的成本会非常高。",
+          "第四类问题是 KPI 和节奏。对方如何定义阶段目标、如何复盘、多久给一次报告、异常情况如何升级、是否能提供明确的负责人。服务商最大的风险不是偶尔做错一次，而是长期没有可追踪的管理节奏。",
+          "第五类问题是退出机制。合同期限、续约条件、试用周期、违约责任、交接安排、历史数据导出方式都要提前讲明。真正成熟的合作，不是只讲开始怎么合作，还要讲如果不合作了怎么体面退出。",
+          "如果你把边界、案例、权限、KPI 和退出机制这些问题都问清楚，再去比较价格和资源，筛选质量会高很多。服务商管理是出海团队经营能力的一部分，不是简单采购。"
+        ],
+        "seoTitle": "出海团队怎么筛选海外仓、ERP 和代运营服务商 | Silkroads Trade",
+        "seoDescription": "通过边界、案例、权限、KPI 和退出机制 5 个维度，梳理筛选跨境服务商的实用问题框架。"
+      },
+      "en": {
+        "title": "How to choose 3PL, ERP, or agency partners: 12 practical questions for cross-border teams",
+        "summary": "A realistic evaluation framework for choosing service partners without being trapped by weak scope, poor visibility, or messy handover risk.",
+        "content": [
+          "Choosing the wrong service partner is often more expensive than choosing the wrong software tool. Whether the vendor is a 3PL, ERP provider, agency, or support outsourcer, you need a repeatable evaluation framework before comparing prices.",
+          "The first question set is about scope. What exactly is included, what is out of scope, what triggers extra billing, and who handles exceptions? Many bad partnerships come from misunderstood default assumptions rather than obvious dishonesty.",
+          "The second question set is about proof. A logo wall is not enough. Ask for examples closer to your product, market, and team size, then ask what the provider actually did in those cases rather than what the client achieved in general.",
+          "The third question set is about data and control. Can you access ad accounts, warehouse data, operation logs, and raw performance views directly? Who owns the account structure, assets, historical data, and SOPs if the relationship ends?",
+          "The fourth question set is about cadence. How are goals defined, how often are reviews delivered, how are anomalies escalated, and who is the accountable operator on the vendor side? Good reporting rhythm is part of service quality.",
+          "The fifth question set is about exit. Contract length, trial period, termination rules, handover expectations, and data export access all need to be clear up front. A strong vendor relationship should include a clean offboarding path as well.",
+          "Once scope, proof, control, cadence, and exit are clear, price becomes easier to judge in context. Service-provider management is part of operational capability, not just procurement."
+        ],
+        "seoTitle": "How Cross-Border Teams Should Evaluate Service Providers | Silkroads Trade",
+        "seoDescription": "A practical framework for evaluating 3PLs, ERP vendors, and agencies across scope, proof, access, reporting, and exit terms."
+      }
+    }
+  },
+  {
+    "id": "guide-ai-workflows-for-ops",
+    "slug": "ai-workflows-for-ops",
+    "sortOrder": 7,
+    "featuredCategorySlugs": ["ai-toolbox", "core-tools", "recommended-plugins"],
+    "featuredMarketSlugs": ["us", "eu", "sea"],
+    "featuredPlatformSlugs": ["tiktok-shop", "shopify", "independent-site"],
+    "publishedAt": "2026-05-30",
+    "updatedAt": "2026-05-30",
+    "translations": {
+      "zh-CN": {
+        "title": "AI 不是万能药：出海团队最值得先接入的 6 类 AI 工作流",
+        "summary": "AI 真正的价值不是替代运营，而是把重复、低效、信息密度高的工作先提速。",
+        "content": [
+          "很多出海团队一提 AI，就会想到写文案、做图片、自动回复。但真正值得优先接入 AI 的，不是最“炫”的环节，而是那些重复度高、标准明确、又消耗大量时间的工作流。",
+          "第一类最值得做的是信息整理。竞品监控、评论归纳、用户反馈分类、达人名单初筛、政策更新摘要，这些工作以前经常要人工读很多页面，AI 在这类“先整理再判断”的任务上非常省时。",
+          "第二类是内容生产辅助。这里不只是写一篇广告文案，而是快速产出多个标题方向、不同卖点角度、不同国家版本的描述和 FAQ 草稿。真正高效的团队，不会让 AI 一次写终稿，而是把它当作内容初稿和变体生成器。",
+          "第三类是本地化与客服。翻译、客服话术优化、回复模板整理、差评解释草稿和售后分类，都很适合 AI 参与。但要注意，AI 更适合做第一轮草拟，不适合直接不审就发给客户，尤其在退款和争议场景里。",
+          "第四类是数据复盘。把广告报表、店铺报表和活动结果喂给 AI，让它先做异常归纳、维度排序和问题提示，会大幅降低运营做周报和开复盘会的时间成本。真正省时间的，不是让 AI 给结论，而是让它先把问题面整理出来。",
+          "第五类是 SOP 沉淀。新团队最容易丢失经验，尤其是达人沟通、上新流程、申诉处理、素材测试这些环节。AI 可以把零散聊天记录、操作步骤和复盘内容整理成更像样的 SOP 草稿，帮助团队更快复制经验。",
+          "AI 的正确接法，不是把所有工作一股脑自动化，而是先找那些高频、标准、耗时的环节做辅助。先节省团队最痛的时间，再谈更复杂的自动化，回报通常更实际。"
+        ],
+        "seoTitle": "出海团队最值得先接入的 AI 工作流 | Silkroads Trade",
+        "seoDescription": "从信息整理、内容辅助、客服、本地化、数据复盘到 SOP 沉淀，梳理出海团队最值得优先接入的 AI 工作流。"
+      },
+      "en": {
+        "title": "AI is not magic: the 6 workflows cross-border teams should automate first",
+        "summary": "The highest-return AI use cases usually start with repetitive, structured, information-heavy work rather than flashy creative automation.",
+        "content": [
+          "When teams talk about AI, they often jump straight to copywriting or visuals. In practice, the biggest early return usually comes from repetitive, structured, information-dense workflows that already consume too much operator time.",
+          "The first strong use case is information synthesis. Competitor monitoring, review clustering, customer-feedback categorization, creator shortlist review, and policy change summaries are all areas where AI can organize signal before humans make the final call.",
+          "The second use case is content assistance. This is not about asking AI to publish the final ad copy. It is about rapidly producing multiple headline angles, offer framings, FAQ drafts, and localized variants that humans can refine faster.",
+          "The third use case is localization and support operations. Drafting translations, support templates, review-response structures, and issue categories can save time, but sensitive disputes and refund communication still need human review.",
+          "The fourth use case is performance review. Feeding campaign or store reports into AI for anomaly grouping, dimension ranking, and issue spotting can make weekly review faster. The value comes from narrowing the problem set, not blindly accepting conclusions.",
+          "The fifth use case is SOP capture. Team knowledge around creator outreach, listing workflows, appeal handling, or creative testing often lives in chat threads. AI can turn that scattered knowledge into cleaner operating drafts that teams can standardize.",
+          "The best AI adoption path is not maximum automation. It is targeted acceleration on high-frequency, high-friction work first, followed by stricter process design later."
+        ],
+        "seoTitle": "The Best First AI Workflows for Cross-Border Operators | Silkroads Trade",
+        "seoDescription": "A practical guide to the six highest-value AI workflows for cross-border teams across research, content, support, reporting, and SOP capture."
+      }
+    }
+  },
+  {
+    "id": "guide-profitability-metrics",
+    "slug": "profitability-metrics",
+    "sortOrder": 8,
+    "featuredCategorySlugs": ["core-tools", "cross-border-services", "popular-platforms"],
+    "featuredMarketSlugs": ["us", "eu", "sea"],
+    "featuredPlatformSlugs": ["amazon", "shopify", "independent-site"],
+    "publishedAt": "2026-05-30",
+    "updatedAt": "2026-05-30",
+    "translations": {
+      "zh-CN": {
+        "title": "利润为什么总对不上：出海团队一定要盯住的 8 个经营数字",
+        "summary": "很多团队不是不会卖，而是赚没赚钱、钱卡在哪、问题出在哪都说不清，这篇文章帮你把关键数字理顺。",
+        "content": [
+          "出海业务里最常见的经营错觉，是“销售额在涨，所以应该赚钱”。但真正决定你能不能持续扩张的，不是 GMV，而是毛利、贡献利润、库存周转、广告回本和现金回笼这几组数字是否健康。",
+          "第一个必须盯住的是单笔贡献利润。不是毛利率，而是每卖出一单，在扣掉平台费、物流费、广告、支付费、退款损耗和售后成本之后，到底还剩多少钱。这个数字不清楚，后面的扩量判断基本都靠感觉。",
+          "第二个关键数字是广告真实回本。不要只看 ROAS 或者 ACOS，更要看广告投放后的整体利润变化。如果广告带来的订单看起来多，但把利润率打穿了，那就不是有效增长，而是低质量放量。",
+          "第三个是库存周转和补货压力。很多团队账面利润看起来不错，但现金都压在货上，补货一拉长、退货一增加，经营就会很紧张。库存周转天数和安全库存判断，会直接影响你敢不敢继续扩品和扩预算。",
+          "第四个是退款和客诉指标。退款率、拒付率、售后时长、差评集中点这些数据，看起来不像财务数字，但它们对利润的破坏经常比广告失误更持续。你不看这些，就很难知道利润到底是被哪里吃掉的。",
+          "第五个是渠道效率差异。平台、独立站、达人分销、自然流量、广告流量带来的用户质量往往完全不同。把所有订单混在一起看，会让你误以为“整体还行”，但其实真正赚钱的可能只有其中一小部分渠道。",
+          "经营数字的作用，不是让你做更复杂的报表，而是让你更快判断该砍什么、保什么、放大什么。真正成熟的出海团队，不是数据最多，而是知道哪些数字最值得每天盯。"
+        ],
+        "seoTitle": "出海团队最该盯住的利润与经营数字 | Silkroads Trade",
+        "seoDescription": "围绕贡献利润、广告回本、库存周转、退款和渠道效率，梳理出海团队最关键的经营指标。"
+      },
+      "en": {
+        "title": "Why the profit never seems to match: 8 operating numbers cross-border teams must watch",
+        "summary": "A practical guide to the metrics that explain real profitability, cash pressure, and channel quality beyond topline sales.",
+        "content": [
+          "One of the most dangerous cross-border operating illusions is assuming that growing sales automatically means healthy profit. Sustainable growth depends on contribution profit, ad efficiency, inventory pressure, refund drag, and cash recovery quality.",
+          "The first essential number is per-order contribution profit. Not gross margin in theory, but what is left after platform fees, logistics, ads, payment cost, refund damage, and support burden are all included.",
+          "The second is real ad payback. ROAS or ACOS alone is not enough if margin is collapsing underneath. Ad spend should be judged by its effect on total contribution, not by traffic volume or order count in isolation.",
+          "The third is inventory turnover and replenishment pressure. Many teams appear profitable on paper while cash is trapped in stock. Lead-time risk, slow turnover, and refund drag quickly turn accounting profit into operating stress.",
+          "The fourth is refund and complaint behavior. Refund rate, chargeback rate, service-response delays, and recurring complaint themes often damage profit more persistently than one weak campaign ever could.",
+          "The fifth is channel quality difference. Platforms, independent sites, creator channels, organic search, and paid traffic all bring different customer economics. If all orders are blended together, weak channels can hide behind stronger ones.",
+          "Good operating metrics are not about building fancy dashboards. They are about helping the team decide faster what to cut, protect, and scale."
+        ],
+        "seoTitle": "The Key Profitability Metrics for Cross-Border Teams | Silkroads Trade",
+        "seoDescription": "Track the operating numbers that matter most for real profitability across contribution margin, ad payback, inventory, refunds, and channel quality."
       }
     }
   }
