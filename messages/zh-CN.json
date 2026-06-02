@@ -20,6 +20,9 @@
     "search": "搜索",
     "browseCategory": "浏览分类",
     "empty": "暂无可展示内容",
+    "emptyToolsTitle": "该板块的公开站点仍在复核中",
+    "emptyToolsDescription": "我们正在清理和复核历史候选站点，只保留真实、有效、描述准确的工具与服务商。你也可以提交值得收录的新站点。",
+    "submitSite": "提交新站点",
     "stats": {
       "tools": "工具收录",
       "categories": "导航分类",
@@ -61,7 +64,7 @@
     "featuredPlatforms": "重点平台",
     "featuredGuides": "运营专题",
     "submissionTitle": "用户投稿已开放",
-    "submissionDescription": "欢迎提交值得收录的站点、工具与服务商信息，审核通过后将纳入站点内容库。",
+    "submissionDescription": "欢迎提交值得收录的站点、工具与服务商信息，审核通过后将进入公开目录。",
     "submissionCta": "提交新站点",
     "sponsorTitle": "合作推广",
     "sponsorDescription": "面向优质服务商开放合作展示机会，详情可通过站点提交入口联系。"

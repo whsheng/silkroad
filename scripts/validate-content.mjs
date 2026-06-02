@@ -1,6 +1,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import guideContentUtils from "../lib/content/guides-shared.js"
+import * as toolContentUtils from "../lib/content/tools-shared.mjs"
 
 const repoRoot = process.cwd()
 const contentRoot = path.join(repoRoot, "content")
@@ -79,7 +80,7 @@ function main() {
     locales,
     includeDrafts: true
   })
-  const tools = readJson("tools/index.json")
+  const tools = readJson("tools/index.json").map((tool) => toolContentUtils.normalizeToolRecord(tool))
   const ads = readJson("ads/items.json")
   const placements = readJson("ads/placements.json")
 
@@ -129,6 +130,20 @@ function main() {
     assert(Array.isArray(tool.categorySlugs) && tool.categorySlugs.length > 0, `tool ${tool.slug}: missing categorySlugs`)
     assert(Array.isArray(tool.marketSlugs) && tool.marketSlugs.length > 0, `tool ${tool.slug}: missing marketSlugs`)
     assert(Array.isArray(tool.platformSlugs) && tool.platformSlugs.length > 0, `tool ${tool.slug}: missing platformSlugs`)
+    assert(toolContentUtils.toolPublicationStatuses.includes(tool.publicationStatus), `tool ${tool.slug}: invalid publicationStatus`)
+    assert(toolContentUtils.toolAuditStatuses.includes(tool.auditStatus), `tool ${tool.slug}: invalid auditStatus`)
+    if (tool.lastCheckedAt !== undefined) {
+      assert(/^\d{4}-\d{2}-\d{2}$/.test(tool.lastCheckedAt), `tool ${tool.slug}: invalid lastCheckedAt`)
+    }
+    if (tool.finalUrl !== undefined) {
+      assert(typeof tool.finalUrl === "string" && tool.finalUrl.startsWith("http"), `tool ${tool.slug}: invalid finalUrl`)
+    }
+    if (tool.finalDomain !== undefined) {
+      assert(typeof tool.finalDomain === "string" && tool.finalDomain.length > 0, `tool ${tool.slug}: invalid finalDomain`)
+    }
+    if (tool.pageTitle !== undefined) {
+      assert(typeof tool.pageTitle === "string", `tool ${tool.slug}: invalid pageTitle`)
+    }
     if (tool.sourceIssueNumber !== undefined) {
       assert(Number.isInteger(tool.sourceIssueNumber) && tool.sourceIssueNumber > 0, `tool ${tool.slug}: invalid sourceIssueNumber`)
     }

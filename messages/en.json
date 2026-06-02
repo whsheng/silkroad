@@ -20,6 +20,9 @@
     "search": "Search",
     "browseCategory": "Browse category",
     "empty": "No content available yet",
+    "emptyToolsTitle": "Public listings for this section are still being reviewed",
+    "emptyToolsDescription": "We are cleaning and verifying the legacy candidate pool so only valid, relevant, and accurately described resources stay public. You can also submit a site for review.",
+    "submitSite": "Submit a site",
     "stats": {
       "tools": "Indexed tools",
       "categories": "Core categories",
@@ -61,7 +64,7 @@
     "featuredPlatforms": "Priority platforms",
     "featuredGuides": "Operational guides",
     "submissionTitle": "User submissions are now open",
-    "submissionDescription": "Submit valuable tools, sites, or service providers for review and possible inclusion in the directory.",
+    "submissionDescription": "Submit valuable tools, sites, or service providers for review and possible inclusion in the public directory.",
     "submissionCta": "Submit a site",
     "sponsorTitle": "Partnership opportunities",
     "sponsorDescription": "Qualified service providers can explore promotional placements through the submission channel."

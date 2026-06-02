@@ -1,6 +1,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import guideContentUtils from "../lib/content/guides-shared.js"
+import * as toolContentUtils from "../lib/content/tools-shared.mjs"
 
 const repoRoot = process.cwd()
 const contentRoot = path.join(repoRoot, "content")
@@ -21,6 +22,8 @@ function main() {
 
   const categories = readJson("categories/index.json")
   const tools = readJson("tools/index.json")
+    .map((tool) => toolContentUtils.normalizeToolRecord(tool))
+    .filter((tool) => toolContentUtils.isToolPublished(tool))
   const markets = readJson("markets/index.json")
   const platforms = readJson("platforms/index.json")
   const guides = guideContentUtils.loadGuideRecordsFromContent(contentRoot, {

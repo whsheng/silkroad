@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 
 import { JsonLd } from "@/components/public/json-ld"
 import { LinkTile } from "@/components/public/link-tile"
+import { EmptyStateCard } from "@/components/public/empty-state-card"
 import { PageShell } from "@/components/public/page-shell"
 import { SectionHeading } from "@/components/public/section-heading"
 import { ToolGrid } from "@/components/public/tool-grid"
@@ -135,7 +136,16 @@ export default async function PlatformPage({ params }: PlatformPageProps) {
 
       <section className="space-y-6">
         <SectionHeading title={dictionary.common.tools} description={platform.translation.shortDescription} />
-        <ToolGrid locale={locale} tools={tools} />
+        {tools.length > 0 ? (
+          <ToolGrid locale={locale} tools={tools} />
+        ) : (
+          <EmptyStateCard
+            title={dictionary.common.emptyToolsTitle}
+            description={dictionary.common.emptyToolsDescription}
+            ctaLabel={dictionary.common.submitSite}
+            ctaHref={`/${locale}/submit`}
+          />
+        )}
       </section>
 
       <section className="space-y-6">

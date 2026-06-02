@@ -4,6 +4,7 @@ import path from "node:path"
 
 import { defaultLocale, locales, type Locale } from "@/lib/i18n/config"
 import guideContentUtils from "@/lib/content/guides-shared.js"
+import * as toolContentUtils from "@/lib/content/tools-shared.mjs"
 import type {
   AdItemRecord,
   AdPlacementRecord,
@@ -29,7 +30,7 @@ function readJsonFile<T>(relativePath: string): T {
 
 export const getContentData = cache((): ContentData => {
   const categories = readJsonFile<CategoryRecord[]>("categories/index.json")
-  const tools = readJsonFile<ToolRecord[]>("tools/index.json")
+  const tools = readJsonFile<ToolRecord[]>("tools/index.json").map((tool) => toolContentUtils.normalizeToolRecord(tool))
   const markets = readJsonFile<MarketRecord[]>("markets/index.json")
   const platforms = readJsonFile<PlatformRecord[]>("platforms/index.json")
   const guides = guideContentUtils.loadGuideRecordsFromContent(contentRoot, {
@@ -82,10 +83,12 @@ export function getCategoryBySlug(locale: Locale, slug: string) {
 export function getTools(locale: Locale) {
   const data = getContentData()
 
-  return data.tools.map((tool) => ({
-    ...tool,
-    translation: tool.translations[locale] ?? tool.translations[defaultLocale]
-  }))
+  return data.tools
+    .filter((tool) => toolContentUtils.isToolPublished(tool))
+    .map((tool) => ({
+      ...tool,
+      translation: tool.translations[locale] ?? tool.translations[defaultLocale]
+    }))
 }
 
 export function getToolBySlug(locale: Locale, slug: string) {
@@ -193,10 +196,11 @@ export function getAdsForPlacement(
 
 export function getStats() {
   const data = getContentData()
+  const publishedTools = data.tools.filter((tool) => toolContentUtils.isToolPublished(tool))
 
   return {
     categoryCount: data.categories.length,
-    toolCount: data.tools.length,
+    toolCount: publishedTools.length,
     marketCount: data.markets.length,
     platformCount: data.platforms.length
   }
@@ -232,7 +236,9 @@ export function getSearchEntries(locale: Locale): SearchEntry[] {
     href: `/${locale}/guide/${guide.slug}`,
     external: false
   }))
-  const tools = data.tools.map((tool) => {
+  const tools = data.tools
+    .filter((tool) => toolContentUtils.isToolPublished(tool))
+    .map((tool) => {
     const translation = tool.translations[locale] ?? tool.translations[defaultLocale]
 
     return {
@@ -242,7 +248,13 @@ export function getSearchEntries(locale: Locale): SearchEntry[] {
       href: tool.officialUrl,
       external: true
     }
-  })
+    })
 
   return [...categories, ...markets, ...platforms, ...guides, ...tools]
+}
+
+export function getPublishedToolSlugSet() {
+  const data = getContentData()
+
+  return new Set(data.tools.filter((tool) => toolContentUtils.isToolPublished(tool)).map((tool) => tool.slug))
 }

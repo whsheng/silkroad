@@ -41,6 +41,12 @@ export type ToolRecord = {
   supportsChinese: boolean
   verificationStatus: "seed" | "reviewed"
   sourceType: "seed_import" | "manual_editor"
+  publicationStatus?: "candidate" | "published" | "hidden" | "rejected"
+  auditStatus?: "unchecked" | "ok" | "redirected" | "dead" | "parked" | "aggregator" | "review_needed"
+  lastCheckedAt?: string
+  finalUrl?: string
+  finalDomain?: string
+  pageTitle?: string
   sourceIssueNumber?: number
   reviewStatus?: "pending-review" | "needs-info" | "approved" | "rejected" | "published"
   reviewedAt?: string

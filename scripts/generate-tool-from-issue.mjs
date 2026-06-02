@@ -182,6 +182,8 @@ function buildToolRecord(parsedIssue, options) {
     supportsChinese: true,
     verificationStatus: "reviewed",
     sourceType: "manual_editor",
+    publicationStatus: "published",
+    auditStatus: "review_needed",
     sourceIssueNumber,
     reviewStatus: "approved",
     reviewedAt: new Date().toISOString().slice(0, 10),

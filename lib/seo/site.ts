@@ -1,4 +1,4 @@
-export const siteUrl = "https://silkroads.trade"
+export const siteUrl = "https://www.silkroads.trade"
 
 export const siteName = {
   "zh-CN": "Silkroads Trade",

@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
+import { BackToTopButton } from "@/components/public/back-to-top-button"
 import { Locale, getLocaleLabel, isLocale, locales } from "@/lib/i18n/config"
 import { getDictionary } from "@/lib/i18n/get-dictionary"
 import { buildMetadata } from "@/lib/seo/metadata"
@@ -56,6 +57,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         </div>
       </header>
       <main>{children}</main>
+      <BackToTopButton />
       <footer className="border-t border-border/70 bg-background/80">
         <div className="mx-auto flex w-full max-w-7xl flex-col gap-2 px-4 py-8 text-sm text-muted-foreground md:px-8">
           <p>{dictionary.footer.description}</p>

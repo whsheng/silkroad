@@ -615,6 +615,8 @@ function main() {
         supportsChinese: true,
         verificationStatus: "seed",
         sourceType: "seed_import",
+        publicationStatus: "candidate",
+        auditStatus: "unchecked",
         categorySlugs: [slug],
         marketSlugs: markets,
         platformSlugs: platforms,

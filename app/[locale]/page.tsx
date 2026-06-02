@@ -4,6 +4,7 @@ import { ArrowRight, Compass, Globe2, Layers, Rocket, Star } from "lucide-react"
 import { notFound } from "next/navigation"
 
 import { AdBanner } from "@/components/public/ad-banner"
+import { EmptyStateCard } from "@/components/public/empty-state-card"
 import { JsonLd } from "@/components/public/json-ld"
 import { LinkTile } from "@/components/public/link-tile"
 import { PageShell } from "@/components/public/page-shell"
@@ -17,6 +18,7 @@ import {
   getGuides,
   getMarkets,
   getPlatforms,
+  getPublishedToolSlugSet,
   getStats
 } from "@/lib/content/loaders"
 import { isLocale, type Locale } from "@/lib/i18n/config"
@@ -59,6 +61,7 @@ function HomeContent({ locale }: { locale: Locale }) {
   const platforms = getPlatforms(locale)
   const guides = getGuides(locale)
   const tools = getFeaturedTools(locale, 9)
+  const publishedToolSlugSet = getPublishedToolSlugSet()
   const heroAds = getAdsForPlacement(locale, "home_hero_banner", "home", null)
   const stats = getStats()
 
@@ -162,7 +165,7 @@ function HomeContent({ locale }: { locale: Locale }) {
               title={category.translation.name}
               description={category.translation.shortDescription}
               href={`/${locale}/category/${category.slug}`}
-              meta={`${category.toolSlugs.length} ${dictionary.common.tools}`}
+              meta={`${category.toolSlugs.filter((slug) => publishedToolSlugSet.has(slug)).length} ${dictionary.common.tools}`}
             />
           ))}
         </div>
@@ -170,7 +173,16 @@ function HomeContent({ locale }: { locale: Locale }) {
 
       <section className="space-y-6">
         <SectionHeading title={dictionary.home.featuredTools} description={locale === "zh-CN" ? "精选一批高频入口，帮助用户快速发现真实可用的站点和服务商。" : "A curated set of high-frequency resources to help teams discover practical tools faster."} />
-        <ToolGrid locale={locale} tools={tools} />
+        {tools.length > 0 ? (
+          <ToolGrid locale={locale} tools={tools} />
+        ) : (
+          <EmptyStateCard
+            title={dictionary.common.emptyToolsTitle}
+            description={dictionary.common.emptyToolsDescription}
+            ctaLabel={dictionary.common.submitSite}
+            ctaHref={`/${locale}/submit`}
+          />
+        )}
       </section>
 
       <section className="grid gap-8 lg:grid-cols-2">
